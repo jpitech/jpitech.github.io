@@ -11,7 +11,7 @@ while (s != verifyPass()) {
         window.location.href = "home.html"; //page to redirect if password entered is correct
 
     } else {
-        alert("Incorrect password-Try again");
+        alert("Incorrect password. Refresh the page and try again.");
 
     }
 }
