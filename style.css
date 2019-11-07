@@ -94,6 +94,10 @@ h3 {
     .nav-link {
         font-size: 12pt;
     }
+    
+    .nav {
+        border: none;
+    }
 
     .doc {
         display: grid;
