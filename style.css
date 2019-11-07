@@ -105,10 +105,12 @@ h3 {
 
     .main {
         display: none;
+        border: none;
     }
 
     #overviews {
         display: none;
+        border: none;
     }
 
     .footer {
