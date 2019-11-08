@@ -1,7 +1,7 @@
 var s = "";
 
 function verifyPass() {
-    return "jpi3146"
+    return "Jpi3146"
 }
 
 while (s != verifyPass()) {
