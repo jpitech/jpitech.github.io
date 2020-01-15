@@ -98,6 +98,7 @@ h3 {
     
     .nav {
         border: none;
+        overflow: auto;
     }
 
     .doc {
@@ -108,11 +109,8 @@ h3 {
         margin: 0 auto;
     }
 
-    .main {
-        display: none;
-        border: none;
-    }
-
+    .main,
+    #general,
     #overviews {
         display: none;
         border: none;
@@ -136,23 +134,27 @@ h3 {
     font-size: 14pt;
 }
 
-.main::-webkit-scrollbar {
+.main::-webkit-scrollbar,
+.nav::-webkit-scrollbar {
     border-radius: 2px;
     background: #CCC;
     border: solid thin;
 }
 
-.main::-webkit-scrollbar-thumb {
+.main::-webkit-scrollbar-thumb,
+.nav::-webkit-scrollbar-thumb {
     background: #C4E1EE;
     border-radius: 2px;
     border: solid thin;
 }
 
-.main::-webkit-scrollbar-corner {
+.main::-webkit-scrollbar-corner,
+.nav::-webkit-scrollbar-corner {
     background: #C4E1EE;
 }
 
-.main::-webkit-scrollbar-thumb:hover {
+.main::-webkit-scrollbar-thumb:hover,
+.nav::-webkit-scrollbar-thumb:hover {
   background: #C4E1EE;
 }
 
