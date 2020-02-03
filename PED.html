@@ -7,8 +7,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+	<script type="text/javascript" src="date.js"></script>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-1.6.4.min.js"></script>
 	<script type="text/javascript" src="https://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+	
 </head>
 
 <body>
@@ -22,6 +24,7 @@
 			<ul data-role='listview' data-inset='true'>
 				<li><a href='#card2'>Black screen on card reader</a></li>
 				<li><a href='#card7'>Blank blue screen on card reader</a></li>
+				<li><a href='#card8'>Card reader only showing the Arches</a></li>
 				<li><a href='#card7'>Error on card reader screen</a></li>
 				<li><a href='#card5'>None of the above</a></li>
 			</ul>
@@ -82,10 +85,10 @@
 			<h1>Card Reader Troubleshooting</h1>
 		</div><!-- /header -->
 		<div data-role='content'>
-			<h3>Contact your OTP for further troubleshooting.</h3>
+			<h3>Contact your OTP for further support.</h3>
 			<ul data-role='listview' data-inset='true'>
 				<li><a href="#card16">Restart troubleshooting</a></li>
-				<li><a href="tel:2566902564">Call your OTP.</a></li>
+				<li><a href="tel:2566902564">Call your OTP.</a>
 			</ul>
 		</div><!-- /content -->
 	</div><!-- /page -->
@@ -137,12 +140,10 @@
 		<div data-role='content'>
 			<h3>Open the card reader manually.</h3>
 
+			<p>Access the Cashless Maintenance menu.</p>
 			<ol>
-				<li>Go to Cashless Maintenance Menu</li>
 				<li>Go to Manager → Support → Support</li>
-				<li>Password for second support menu is “Last Digit Year, Last Digit Month, Last Digit Day.” Password
-					for
-					10/15/2020 would be “050”</li>
+				<li>The password is <b id="s1">test</b>.</li>
 				<li>Tap “Cashless Maint”</li>
 				<li>Tap “Open PED”</li>
 			</ol>
@@ -164,11 +165,10 @@
 		<div data-role='content'>
 			<h3>Re-pair and open the card reader manually.</h3>
 
+			<p>Access the Cashless Maintenance menu.</p>
 			<ol>
-				<li>Go to Cashless Maintenance Menu</li>
 				<li>Go to Manager → Support → Support</li>
-				<li>Password for second support menu is “Last Digit Year, Last Digit Month, Last Digit Day.” Password
-					for 10/15/2020 would be “050”</li>
+				<li>The password is <b id="s2">test</b>.</li>
 				<li>Tap “Cashless Maint”</li>
 				<li>Tap “Pair PED” and type the code shown into the card reader. The code is NOT case-sensitive.</li>
 				<li>Tap “Open PED”</li>
