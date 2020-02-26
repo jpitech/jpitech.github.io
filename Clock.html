@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>eSmartClock Troubleshooting</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.6.4.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+</head>
+
+<body>
+
+    <div data-role="page" id="card1">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>eSmartClock Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>What symptoms are you experiencing?</h3>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card5">eSmartClock shows "Offline - Network Error."</a></li>
+                <li><a href="#card14">eSmartClock is stuck on "Syncing."</a></li>
+                <li><a href="#card9">Employee's finger scan will not work.</a></li>
+                <li><a href="#card3">eSmartClock says it needs to be registered.</a></li>
+                <li><a href="#card14">eSmartClock shows a Windows blue screen error.</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card2">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>eSmartClock Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Great! You're good to go!</h3>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card1">Restart troubleshooting</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card3">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>eSmartClock Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Contact your OTP for further troubleshooting.</h3>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card1">Restart troubleshooting</a></li>
+                <li><a href="tel:2566902564">Call your OTP.</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card4">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>eSmartClock Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Wait for eRestaurant.</h3>
+
+            <p>eRestaurant issues will be resolved externally. It is recommended to keep track of time punches on paper
+                until the clock comes online again.</p>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card1">Restart troubleshooting</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card5">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>eSmartClock Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Reboot the eSmartClock.</h3>
+
+            <p>Press the power button once on the eSmartClock to shut down the device. Once it is completely shut down,
+                press the power button again to bring the device back up.</p>
+
+            <p><strong>Did this solve the issue?</strong></p>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card2">Yes</a></li>
+                <li><a href="#card6">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card6">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>eSmartClock Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Verify Internet connectivity.</h3>
+
+            <ol>
+                <li>Tap the gear icon to access the administration menu.</li>
+                <li>Tap "Close Clock."</li>
+                <li>Go to System Maintenance.</li>
+                <li>Choose "Run Connection Test."
+                    <ul>
+                        <li>If both the connection to Altametrics and Google are green, there are no connectivity issues
+                            with the clock. It is likely an issue with eRestaurant, and full functionality should be
+                            restored when the eRestaurant issue is resolved. Hourly employees can still clock in and out
+                            on the eSmartClock, and the punches will be stored locally once the eRestaurant connection
+                            is restored.</li>
+                        <li>If both the connection to Altametrics and Google are red, there is a connectivity issue with
+                            the clock. Proceed with further troubleshooting.</li>
+                    </ul>
+                </li>
+            </ol>
+
+            <p><strong>Is the issue with Internet connectivity or with eRestaurant?</strong></p>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card7">Internet connectivity</a></li>
+                <li><a href="#card4">eRestaurant</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card7">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>eSmartClock Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Reseat the network cable</h3>
+
+            <p>Unplug the yellow network cable and plug it back in.</p>
+
+            <p><strong>Did this solve the issue?</strong></p>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card2">Yes</a></li>
+                <li><a href="#card8">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card8">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>eSmartClock Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Reboot the broadband modem.</h3>
+
+            <p>Pull power for the broadband modem, let it sit for about 30 seconds, and plug it back in. Allow the modem
+                time to fully boot. Once it is finished booting, check the time clock.</p>
+
+            <p><strong>Did this solve the issue?</strong></p>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card2">Yes</a></li>
+                <li><a href="#card3">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card9">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>eSmartClock Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Clean the biometric reader.</h3>
+
+            <p>Use a piece of Scotch tape to clean the biometric reader. <strong>DO NOT</strong> use any sort of
+                chemical or damp towel to clean the biometric reader or you will permanently damage the device.</p>
+
+            <p><strong>Did this solve the issue?</strong></p>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card2">Yes</a></li>
+                <li><a href="#card10">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card10">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>eSmartClock Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Is this occurring with one employee or all employees?</h3>
+
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card11">One employee</a></li>
+                <li><a href="#card14">All employees</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card11">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>eSmartClock Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Verify the employee has a registered finger scan.</h3>
+
+            <ol>
+                <li>Open the manager settings by tapping the gear icon in the top right corner of the screen.</li>
+                <li>Go to <em>Manage Biometrics</em> and verify the employee's name is in the list.</li>
+            </ol>
+
+            <p><strong>Does the employee have a finger scan registered?</strong></p>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card12">Yes</a></li>
+                <li><a href="#card13">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card12">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>eSmartClock Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Delete and re-register the empployee's finger scan.</h3>
+
+            <ol>
+                <li>Find the employee's name and delete the finger scan.</li>
+                <li>Have the employee re-scan his or her finger.</li>
+                <li>Retry the time clock functions.</li>
+            </ol>
+
+            <p><strong>NOTE:</strong> It is strongly recommended to have the employee use his or her thumb as small
+                fingers may not cover enough surface area for the biometric reader to recognize the scan.</p>
+
+            <p><strong>Did this solve the issue?</strong></p>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card2">Yes</a></li>
+                <li><a href="#card3">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card13">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>eSmartClock Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Register the empployee's finger scan.</h3>
+
+            <ol>
+                <li>Register the employee's finger scan.</li>
+                <li>Retry the time clock functions.</li>
+            </ol>
+
+            <p><strong>NOTE:</strong> It is strongly recommended to have the employee use his or her thumb as small
+                fingers may not cover enough surface area for the biometric reader to recognize the scan.</p>
+
+            <p><strong>Did this solve the issue?</strong></p>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card2">Yes</a></li>
+                <li><a href="#card3">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card14">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>eSmartClock Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Reboot the eSmartClock.</h3>
+
+            <p>Press the power button once on the eSmartClock to shut down the device. Once it is completely shut down,
+                press the power button again to bring the device back up.</p>
+
+            <p><strong>Did this solve the issue?</strong></p>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card2">Yes</a></li>
+                <li><a href="#card3">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+</body>
+
+</html>
