@@ -11,4 +11,5 @@ window.onload = function() {
     document.getElementById("s1").innerHTML = dp;
     document.getElementById("s2").innerHTML = dp;
     document.getElementById("s3").innerHTML = dp;
+    document.getElementById("s4").innerHTML = dp;
 };

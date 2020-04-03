@@ -29,6 +29,7 @@
 				<li><a href="#card9">Card reader will not process gift cards.</a></li>
 				<li><a href="#card9">Card reader will not process orders above $25.</a></li>
 				<li><a href="#card9">Register says "Authorizer Not Available"</a></li>
+				<li><a href="#card13">Card reader shows "Maintenance Required"</a></li>
 				<li><a href='#card5'>None of the above</a></li>
 			</ul>
 		</div><!-- /content -->
@@ -91,7 +92,7 @@
 			<h3>Contact your OTP for further support.</h3>
 			<ul data-role='listview' data-inset='true'>
 				<li><a href="#card1">Restart troubleshooting</a></li>
-				<li><a href="tel:2566902564">Call your OTP.</a>
+				<li><a href="tel:2566902564">Call your OTP.</a></li>
 			</ul>
 		</div><!-- /content -->
 	</div><!-- /page -->
@@ -211,7 +212,8 @@
 				<li>Tap Reboot. Takes between two and three minutes to get to the arches.</li>
 			</ol>
 
-			<p><strong>If the card reader does not say "Welcome to McDonald's, open the card reader manually.</strong></p>
+			<p><strong>If the card reader does not say "Welcome to McDonald's, open the card reader manually.</strong>
+			</p>
 
 			<ol>
 				<li>Go to Manager → Support → Support</li>
@@ -280,6 +282,108 @@
 			<ul data-role='listview' data-inset='true'>
 				<li><a href='#card4'>Yes</a></li>
 				<li><a href='#card5'>No</a></li>
+			</ul>
+		</div><!-- /content -->
+	</div><!-- /page -->
+
+	<div data-role='page' id='card13'>
+		<div data-role='header'>
+			<a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+
+			<h1>Card Reader Troubleshooting</h1>
+		</div><!-- /header -->
+		<div data-role='content'>
+			<h3>Is the card reader on a kiosk or register?</h3>
+
+			<ul data-role='listview' data-inset='true'>
+				<li><a href='#card5'>Kiosk</a></li>
+				<li><a href='#card14'>Register</a></li>
+			</ul>
+		</div><!-- /content -->
+	</div><!-- /page -->
+
+	<div data-role='page' id='card14'>
+		<div data-role='header'>
+			<a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+
+			<h1>Card Reader Troubleshooting</h1>
+		</div><!-- /header -->
+		<div data-role='content'>
+			<h3>Is the card reader in drive thru or on front counter?</h3>
+
+			<ul data-role='listview' data-inset='true'>
+				<li><a href='#card15'>Drive thru</a></li>
+				<li><a href='#card16'>Front counter</a></li>
+			</ul>
+		</div><!-- /content -->
+	</div><!-- /page -->
+	<div data-role='page' id='card15'>
+		<div data-role='header'>
+			<a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+
+			<h1>Card Reader Troubleshooting</h1>
+		</div><!-- /header -->
+		<div data-role='content'>
+			<h3>Swap a working card reader from front counter to drive thru.</h3>
+
+			<ol>
+				<li>Disconnect the card reader from register 1.
+					<ul>
+						<li>Take the card reader off of its stand.</li>
+						<li>Disconnect the cable from the card reader by pressing the tabs on the block and pushing it
+							out.</li>
+					</ul>
+				</li>
+				<li>Connect the card reader taken from front counter to the cable in drive thru. Follow the previous
+					steps for disconnecting the malfunctioning card reader.</li>
+				<li>When the card reader screen reaches <em>Select App to Run</em>, select <em>DevIPReg9xx.exe</em> and tap the green check mark.
+					<ul>
+						<li><strong>NOTE:</strong> You only have a few seconds to select the app, so be prepared to move quickly when it shows.</li>
+					</ul>
+				</li>
+				<li>Select <em>Network 2.0</em> and tap <em>Submit</em>.</li>
+				<li>Tap <em>Change</em>.</li>
+				<li>Enter the register number for the device ID.</li>
+				<li>Verify the IP address and tap <em>Apply Settings</em>.
+					<ul>
+						<li>The IP address end in the register number plus 90. For example, the IP address for register 13 should be <em>10.x.y.103</em>.</li>
+					</ul>
+				</li>
+				<li>Once the IP is applied, tap <em>Exit</em>.</li>
+				<li>Allow the card reader to come to the Arches.</li>
+				<li>Pair and open the card reader.
+					<ul>
+						<li>Go to Manager → Support → Support</li>
+						<li>The password is <strong id="s4">test</strong>.</li>
+						<li>Tap “Cashless Maint” for registers. Tap "Pair Kiosk" for kiosks and select the affected kiosk.</li>
+						<li>Tap “Pair PED” and type the code shown into the card reader. The code is NOT case-sensitive.</li>
+						<li>Tap “Open PED”</li>
+					</ul>
+				</li>
+			</ol>
+
+			<p><strong>Were you able to pair and open the card reader, and is the card reader functioning normally?</strong></p>
+			<ul data-role='listview' data-inset='true'>
+				<li><a href='#card4'>Yes</a></li>
+				<li><a href='#card5'>No</a></li>
+			</ul>
+		</div><!-- /content -->
+	</div><!-- /page -->
+
+	<div data-role='page' id='card16'>
+		<div data-role='header'>
+			<a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+
+			<h1>Card Reader Troubleshooting</h1>
+		</div><!-- /header -->
+		<div data-role='content'>
+			<h3>Do not accept cashless at the affected register and contact your OTP.</h3>
+
+			<p>Print a sign and put it on the register stating the register is only accepting cash.</p>
+
+			<ul data-role='listview' data-inset='true'>
+				<li><a href='#card1'>Restart troubleshooting.</a></li>
+				<li><a href="tel:2566902564">Call your OTP.</a></li>
 			</ul>
 		</div><!-- /content -->
 	</div><!-- /page -->
