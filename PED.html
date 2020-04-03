@@ -26,6 +26,9 @@
 				<li><a href='#card6'>Blank blue screen on card reader</a></li>
 				<li><a href='#card7'>Card reader only showing the Arches</a></li>
 				<li><a href='#card6'>Error on card reader screen</a></li>
+				<li><a href="#card9">Card reader will not process gift cards.</a></li>
+				<li><a href="#card9">Card reader will not process orders above $25.</a></li>
+				<li><a href="#card9">Register says "Authorizer Not Available"</a></li>
 				<li><a href='#card5'>None of the above</a></li>
 			</ul>
 		</div><!-- /content -->
@@ -128,7 +131,7 @@
 			<p>Access the Cashless Maintenance menu.</p>
 			<ol>
 				<li>Go to Manager → Support → Support</li>
-				<li>The password is <b id="s1">test</b>.</li>
+				<li>The password is <strong id="s1">test</strong>.</li>
 				<li>Tap “Cashless Maint” for registers. Tap "Pair Kiosk" for kiosks and select the affected kiosk.</li>
 				<li>Tap “Open PED”</li>
 			</ol>
@@ -153,13 +156,127 @@
 			<p>Access the Cashless Maintenance menu.</p>
 			<ol>
 				<li>Go to Manager → Support → Support</li>
-				<li>The password is <b id="s2">test</b>.</li>
+				<li>The password is <strong id="s2">test</strong>.</li>
 				<li>Tap “Cashless Maint” for registers. Tap "Pair Kiosk" for kiosks and select the affected kiosk.</li>
 				<li>Tap “Pair PED” and type the code shown into the card reader. The code is NOT case-sensitive.</li>
 				<li>Tap “Open PED”</li>
 			</ol>
 
 			<p><strong>Were you able to pair and open the card reader?</strong></p>
+			<ul data-role='listview' data-inset='true'>
+				<li><a href='#card4'>Yes</a></li>
+				<li><a href='#card5'>No</a></li>
+			</ul>
+		</div><!-- /content -->
+	</div><!-- /page -->
+
+	<div data-role='page' id='card9'>
+		<div data-role='header'>
+			<a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+
+			<h1>Card Reader Troubleshooting</h1>
+		</div><!-- /header -->
+		<div data-role='content'>
+			<h3>Verify the card reader is SAFing</h3>
+
+			<p>If a card reader is SAFing, the transactions will not be sent to the bank until connectivity is restored.
+			</p>
+			<ol>
+				<li>Open Cellphie on the BOS.</li>
+				<li>Select "Cashless."</li>
+				<li>Select "SAF Status"</li>
+			</ol>
+
+			<p><strong>Is there anything other than $0.00 listed?</strong></p>
+			<ul data-role='listview' data-inset='true'>
+				<li><a href='#card10'>Yes</a></li>
+				<li><a href='#card10'>No</a></li>
+			</ul>
+		</div><!-- /content -->
+	</div><!-- /page -->
+
+	<div data-role='page' id='card10'>
+		<div data-role='header'>
+			<a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+
+			<h1>Card Reader Troubleshooting</h1>
+		</div><!-- /header -->
+		<div data-role='content'>
+
+			<h3>Reboot the card reader and open manually if necessary.</h3>
+
+			<ol>
+				<li>Press and hold 1-5-9</li>
+				<li>Enter the password 190711 and press Enter (green circle).</li>
+				<li>Tap Reboot. Takes between two and three minutes to get to the arches.</li>
+			</ol>
+
+			<p><strong>If the card reader does not say "Welcome to McDonald's, open the card reader manually.</strong></p>
+
+			<ol>
+				<li>Go to Manager → Support → Support</li>
+				<li>The password is <strong id="s3">test</strong>.</li>
+				<li>Tap “Cashless Maint” for registers. Tap "Pair Kiosk" for kiosks and select the affected kiosk.</li>
+				<li>Tap “Pair PED” and type the code shown into the card reader. The code is NOT case-sensitive.</li>
+				<li>Tap “Open PED”</li>
+			</ol>
+
+			<p><strong>Did this solve your issue?</strong></p>
+			<ul data-role='listview' data-inset='true'>
+				<li><a href='#card4'>Yes</a></li>
+				<li><a href='#card11'>No</a></li>
+			</ul>
+		</div><!-- /content -->
+	</div><!-- /page -->
+
+	<div data-role='page' id='card11'>
+		<div data-role='header'>
+			<a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+
+			<h1>Card Reader Troubleshooting</h1>
+		</div><!-- /header -->
+		<div data-role='content'>
+			<h3>Reseat the network cable.</h3>
+
+			<ol>
+				<li>Find the multiport cable. There should be a power cable and a green network cable connected to it.
+				</li>
+				<li>Reseat the network cable on the multiport cable.</li>
+				<li>Reseat the network cable on the biscuit box.</li>
+			</ol>
+
+			<p><strong>NOTE:</strong> The network cable should click into place once it's seated in the port. If the
+				clip is broken off the connector, please contact your OTP immediately to have the cable repaired.</p>
+
+			<p><strong>Did this solve your issue?</strong></p>
+			<ul data-role='listview' data-inset='true'>
+				<li><a href='#card4'>Yes</a></li>
+				<li><a href='#card12'>No</a></li>
+			</ul>
+		</div><!-- /content -->
+	</div><!-- /page -->
+
+	<div data-role='page' id='card12'>
+		<div data-role='header'>
+			<a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+
+			<h1>Card Reader Troubleshooting</h1>
+		</div><!-- /header -->
+		<div data-role='content'>
+			<h3>Connect the network cable to a different port on the biscuit box.</h3>
+
+			<ol>
+				<li>Disconnect the cable from the biscuit box.</li>
+				<li>Move the cable to another port on the biscuit box.
+					<ul>
+						<li>Example: If the cable is in FC-01-B, connect it to FC-01-C.</li>
+					</ul>
+				</li>
+				<li>Move the cable connected to the previous port on the patch panel in the office/tech closet to the
+					new one to keep the device connected to the network.</li>
+			</ol>
+
+			<p><strong>Did this solve your issue?</strong></p>
 			<ul data-role='listview' data-inset='true'>
 				<li><a href='#card4'>Yes</a></li>
 				<li><a href='#card5'>No</a></li>
