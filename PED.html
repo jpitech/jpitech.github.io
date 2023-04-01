@@ -1,0 +1,432 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Card Reader Troubleshooting</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+	<script type="text/javascript" src="date.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+
+</head>
+
+<body>
+	<div data-role='page' id='card1'>
+		<div data-role='header'>
+			<a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+			<h1>Card Reader Troubleshooting</h1>
+		</div><!-- /header -->
+		<div data-role='content'>
+			<h3>What symptoms are you experiencing?</h3>
+			<ul data-role='listview' data-inset='true'>
+				<li><a href='#card2'>Black screen on card reader</a></li>
+				<li><a href='#card6'>Blank blue screen on card reader</a></li>
+				<li><a href='#card7'>Card reader only showing the Arches</a></li>
+				<li><a href='#card6'>Error on card reader screen</a></li>
+				<li><a href="#card9">Card reader will not process gift cards.</a></li>
+				<li><a href="#card9">Card reader will not process orders above $25.</a></li>
+				<li><a href="#card9">Register says "Authorizer Not Available"</a></li>
+				<li><a href="#card6">Register says "Cashless device is not available"</a></li>
+				<li><a href="#card13">Card reader shows "Maintenance Required"</a></li>
+				<li><a href='#card5'>None of the above</a></li>
+			</ul>
+		</div><!-- /content -->
+	</div><!-- /page -->
+
+	<div data-role='page' id='card2'>
+		<div data-role='header'>
+			<a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+			<h1>Card Reader Troubleshooting</h1>
+		</div><!-- /header -->
+		<div data-role='content'>
+			<h3>Reseat cable in the back of the card reader.</h3>
+
+			<p><strong>Did this solve your issue?</strong></p>
+			<ul data-role='listview' data-inset='true'>
+				<li><a href='#card4'>Yes</a></li>
+				<li><a href='#card3'>No</a></li>
+			</ul>
+		</div><!-- /content -->
+	</div><!-- /page -->
+
+	<div data-role='page' id='card3'>
+		<div data-role='header'>
+			<a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+
+			<h1>Card Reader Troubleshooting</h1>
+		</div><!-- /header -->
+		<div data-role='content'>
+			<h3>Check the multiport cable connections. Reseat power cables and check twist lock cable.</h3>
+
+			<p><strong>Did this solve your issue?</strong></p>
+			<ul data-role='listview' data-inset='true'>
+				<li><a href='#card4'>Yes</a></li>
+				<li><a href='#card5'>No</a></li>
+			</ul>
+		</div><!-- /content -->
+	</div><!-- /page -->
+
+	<div data-role='page' id='card4'>
+		<div data-role='header'>
+			<a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+
+			<h1>Card Reader Troubleshooting</h1>
+		</div><!-- /header -->
+		<div data-role='content'>
+			<h3>Great! You're good to go!</h3>
+			<ul data-role='listview' data-inset='true'>
+				<li><a href="#card1">Restart troubleshooting</a></li>
+			</ul>
+		</div><!-- /content -->
+	</div><!-- /page -->
+
+	<div data-role='page' id='card5'>
+		<div data-role='header'>
+			<a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+
+			<h1>Card Reader Troubleshooting</h1>
+		</div><!-- /header -->
+		<div data-role='content'>
+			<h3>Contact your OTP for further support.</h3>
+			<ul data-role='listview' data-inset='true'>
+				<li><a href="#card1">Restart troubleshooting</a></li>
+				<li><a href="tel:2566902564">Call your OTP.</a></li>
+			</ul>
+		</div><!-- /content -->
+	</div><!-- /page -->
+
+	<div data-role='page' id='card6'>
+		<div data-role='header'>
+			<a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+
+			<h1>Card Reader Troubleshooting</h1>
+		</div><!-- /header -->
+		<div data-role='content'>
+			<h3>Reboot the card reader.</h3>
+
+			<p>There are three methods to reboot the card reader:</p>
+
+			<p><strong>Method 1: 1-5-9 reboot</strong></p>
+			<ol>
+				<li>Press and hold 1-5-9</li>
+				<li>Enter the password 190711 and press Enter (green circle).</li>
+				<li>Tap Reboot. Takes between two and three minutes to get to the arches.</li>
+			</ol>
+
+			<p><strong>Method 2: XO reboot</strong></p>
+			<ol>
+				<li>Press and hold both the <em>X</em> and <em>O</em> buttons.</li>
+				<li>Release the buttons when the blue lights for the card swipe path light up.</li>
+			</ol>
+
+			<p><strong>Method 3: Hard reboot</strong></p>
+			<ol>
+				<li>Remove the card reader from its stand.</li>
+				<li>Press the two tabs on the plastic block, and slide the block out.</li>
+				<li>Plug the block back into the card reader.</li>
+			</ol>
+
+			<p><strong>Does the card reader say "Welcome to McDonald's"?</strong></p>
+			<ul data-role='listview' data-inset='true'>
+				<li><a href='#card4'>Yes</a></li>
+				<li><a href='#card7'>No</a></li>
+			</ul>
+		</div><!-- /content -->
+	</div><!-- /page -->
+
+	<div data-role='page' id='card7'>
+		<div data-role='header'>
+			<a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+
+			<h1>Card Reader Troubleshooting</h1>
+		</div><!-- /header -->
+		<div data-role='content'>
+			<h3>Open the card reader manually.</h3>
+
+			<p>Access the Cashless Maintenance menu.</p>
+			<ol>
+				<li>Go to Manager → Support → Support</li>
+				<li>The password is <strong id="s1">test</strong>.</li>
+				<li>Tap “Cashless Maint” for registers. Tap "Pair Kiosk" for kiosks and select the affected kiosk.</li>
+				<li>Tap “Open PED”</li>
+			</ol>
+
+			<p><strong>Did the register say "Successfully opened PED?"</strong></p>
+			<ul data-role='listview' data-inset='true'>
+				<li><a href='#card4'>Yes</a></li>
+				<li><a href='#card8'>No</a></li>
+			</ul>
+		</div><!-- /content -->
+	</div><!-- /page -->
+
+	<div data-role='page' id='card8'>
+		<div data-role='header'>
+			<a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+
+			<h1>Card Reader Troubleshooting</h1>
+		</div><!-- /header -->
+		<div data-role='content'>
+			<h3>Re-pair and open the card reader manually.</h3>
+
+			<p>Access the Cashless Maintenance menu.</p>
+			<ol>
+				<li>Go to Manager → Support → Support</li>
+				<li>The password is <strong id="s2">test</strong>.</li>
+				<li>Tap “Cashless Maint” for registers. Tap "Pair Kiosk" for kiosks and select the affected kiosk.</li>
+				<li>Tap “Pair PED” and type the code shown into the card reader. The code is NOT case-sensitive.</li>
+				<li>Tap “Open PED”</li>
+			</ol>
+
+			<p><strong>Were you able to pair and open the card reader?</strong></p>
+			<ul data-role='listview' data-inset='true'>
+				<li><a href='#card4'>Yes</a></li>
+				<li><a href='#card5'>No</a></li>
+			</ul>
+		</div><!-- /content -->
+	</div><!-- /page -->
+
+	<div data-role='page' id='card9'>
+		<div data-role='header'>
+			<a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+
+			<h1>Card Reader Troubleshooting</h1>
+		</div><!-- /header -->
+		<div data-role='content'>
+			<h3>Verify the card reader is SAFing</h3>
+
+			<p>If a card reader is SAFing, the transactions will not be sent to the bank until connectivity is restored.
+			</p>
+			<ol>
+				<li>Open Cellphie on the BOS.</li>
+				<li>Select "Cashless."</li>
+				<li>Select "SAF Status"</li>
+			</ol>
+
+			<p><strong>Is there anything other than $0.00 listed?</strong></p>
+			<ul data-role='listview' data-inset='true'>
+				<li><a href='#card10'>Yes</a></li>
+				<li><a href='#card10'>No</a></li>
+			</ul>
+		</div><!-- /content -->
+	</div><!-- /page -->
+
+	<div data-role='page' id='card10'>
+		<div data-role='header'>
+			<a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+
+			<h1>Card Reader Troubleshooting</h1>
+		</div><!-- /header -->
+		<div data-role='content'>
+
+			<h3>Reboot the card reader and open manually if necessary.</h3>
+
+			<p>There are three methods to reboot the card reader:</p>
+
+			<p><strong>Method 1: 1-5-9 reboot</strong></p>
+			<ol>
+				<li>Press and hold 1-5-9</li>
+				<li>Enter the password 190711 and press Enter (green circle).</li>
+				<li>Tap Reboot. Takes between two and three minutes to get to the arches.</li>
+			</ol>
+
+			<p><strong>Method 2: XO reboot</strong></p>
+			<ol>
+				<li>Press and hold both the <em>X</em> and <em>O</em> buttons.</li>
+				<li>Release the buttons when the blue lights for the card swipe path light up.</li>
+			</ol>
+
+			<p><strong>Method 3: Hard reboot</strong></p>
+			<ol>
+				<li>Remove the card reader from its stand.</li>
+				<li>Press the two tabs on the plastic block, and slide the block out.</li>
+				<li>Plug the block back into the card reader.</li>
+			</ol>
+
+			<p><strong>If the card reader does not say "Welcome to McDonald's, open the card reader manually.</strong>
+			</p>
+
+			<ol>
+				<li>Go to Manager → Support → Support</li>
+				<li>The password is <strong id="s3">test</strong>.</li>
+				<li>Tap “Cashless Maint” for registers. Tap "Pair Kiosk" for kiosks and select the affected kiosk.</li>
+				<li>Tap “Pair PED” and type the code shown into the card reader. The code is NOT case-sensitive.</li>
+				<li>Tap “Open PED”</li>
+			</ol>
+
+			<p><strong>Did this solve your issue?</strong></p>
+			<ul data-role='listview' data-inset='true'>
+				<li><a href='#card4'>Yes</a></li>
+				<li><a href='#card11'>No</a></li>
+			</ul>
+		</div><!-- /content -->
+	</div><!-- /page -->
+
+	<div data-role='page' id='card11'>
+		<div data-role='header'>
+			<a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+
+			<h1>Card Reader Troubleshooting</h1>
+		</div><!-- /header -->
+		<div data-role='content'>
+			<h3>Reseat the network cable.</h3>
+
+			<ol>
+				<li>Find the multiport cable by tracing the cable back from the card reader. There should be a power cable and a green network cable connected to it.
+				</li>
+				<li>Reseat the network cable on the multiport cable.</li>
+				<li>Reseat the network cable on the biscuit box.</li>
+			</ol>
+
+			<p><strong>NOTE:</strong> The network cable should click into place once it's seated in the port. If the
+				clip is broken off the connector, please contact your OTP immediately to have the cable repaired.</p>
+
+			<p><strong>Did this solve your issue?</strong></p>
+			<ul data-role='listview' data-inset='true'>
+				<li><a href='#card4'>Yes</a></li>
+				<li><a href='#card12'>No</a></li>
+			</ul>
+		</div><!-- /content -->
+	</div><!-- /page -->
+
+	<div data-role='page' id='card12'>
+		<div data-role='header'>
+			<a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+
+			<h1>Card Reader Troubleshooting</h1>
+		</div><!-- /header -->
+		<div data-role='content'>
+			<h3>Connect the network cable to a different port on the biscuit box.</h3>
+
+			<ol>
+				<li>Disconnect the cable from the biscuit box.</li>
+				<li>Move the cable to another port on the biscuit box.
+					<ul>
+						<li>Example: If the cable is in FC-01-B, connect it to FC-01-C.</li>
+					</ul>
+				</li>
+				<li>Move the cable connected to the previous port on the patch panel in the office/tech closet to the
+					new one to keep the device connected to the network.</li>
+			</ol>
+
+			<p><strong>Did this solve your issue?</strong></p>
+			<ul data-role='listview' data-inset='true'>
+				<li><a href='#card4'>Yes</a></li>
+				<li><a href='#card5'>No</a></li>
+			</ul>
+		</div><!-- /content -->
+	</div><!-- /page -->
+
+	<div data-role='page' id='card13'>
+		<div data-role='header'>
+			<a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+
+			<h1>Card Reader Troubleshooting</h1>
+		</div><!-- /header -->
+		<div data-role='content'>
+			<h3>Is the card reader on a kiosk or register?</h3>
+
+			<ul data-role='listview' data-inset='true'>
+				<li><a href='#card5'>Kiosk</a></li>
+				<li><a href='#card14'>Register</a></li>
+			</ul>
+		</div><!-- /content -->
+	</div><!-- /page -->
+
+	<div data-role='page' id='card14'>
+		<div data-role='header'>
+			<a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+
+			<h1>Card Reader Troubleshooting</h1>
+		</div><!-- /header -->
+		<div data-role='content'>
+			<h3>Is the card reader in drive thru or on front counter?</h3>
+
+			<ul data-role='listview' data-inset='true'>
+				<li><a href='#card15'>Drive thru</a></li>
+				<li><a href='#card16'>Front counter</a></li>
+			</ul>
+		</div><!-- /content -->
+	</div><!-- /page -->
+	<div data-role='page' id='card15'>
+		<div data-role='header'>
+			<a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+
+			<h1>Card Reader Troubleshooting</h1>
+		</div><!-- /header -->
+		<div data-role='content'>
+			<h3>Swap a working card reader from front counter to drive thru.</h3>
+
+			<ol>
+				<li>Disconnect the card reader from register 1.
+					<ul>
+						<li>Take the card reader off of its stand.</li>
+						<li>Disconnect the cable from the card reader by pressing the tabs on the block and pushing it
+							out.</li>
+					</ul>
+				</li>
+				<li>Connect the card reader taken from front counter to the cable in drive thru. Follow the previous
+					steps for disconnecting the malfunctioning card reader.</li>asdfasdf
+
+				<li>When the card reader screen reaches <em>Select App to Run</em>, select <em>DevIPReg9xx.exe</em> and
+					tap the green check mark.
+					<ul>
+						<li><strong>NOTE:</strong> You only have a few seconds to select the app, so be prepared to move
+							quickly when it shows.</li>
+					</ul>
+				</li>
+				<li>Select <em>Network 2.0</em> and tap <em>Submit</em>.</li>
+				<li>Tap <em>Change</em>.</li>
+				<li>Enter the register number for the device ID.</li>
+				<li>Verify the IP address and tap <em>Apply Settings</em>.
+					<ul>
+						<li>The IP address end in the register number plus 90. For example, the IP address for register
+							13 should be <em>10.x.y.103</em>.</li>
+					</ul>
+				</li>
+				<li>Once the IP is applied, tap <em>Exit</em>.</li>
+				<li>Allow the card reader to come to the Arches.</li>
+				<li>Pair and open the card reader.
+					<ul>
+						<li>Go to Manager → Support → Support</li>
+						<li>The password is <strong id="s4">test</strong>.</li>
+						<li>Tap “Cashless Maint” for registers. Tap "Pair Kiosk" for kiosks and select the affected
+							kiosk.</li>
+						<li>Tap “Pair PED” and type the code shown into the card reader. The code is NOT case-sensitive.
+						</li>
+						<li>Tap “Open PED”</li>
+					</ul>
+				</li>
+			</ol>
+
+			<p><strong>Were you able to pair and open the card reader, and is the card reader functioning
+					normally?</strong></p>
+			<ul data-role='listview' data-inset='true'>
+				<li><a href='#card4'>Yes</a></li>
+				<li><a href='#card5'>No</a></li>
+			</ul>
+		</div><!-- /content -->
+	</div><!-- /page -->
+
+	<div data-role='page' id='card16'>
+		<div data-role='header'>
+			<a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+
+			<h1>Card Reader Troubleshooting</h1>
+		</div><!-- /header -->
+		<div data-role='content'>
+			<h3>Do not accept cashless at the affected register and contact your OTP.</h3>
+
+			<p>Print a sign and put it on the register stating the register is only accepting cash.</p>
+
+			<ul data-role='listview' data-inset='true'>
+				<li><a href='#card1'>Restart troubleshooting.</a></li>
+				<li><a href="tel:2566902564">Call your OTP.</a></li>
+			</ul>
+		</div><!-- /content -->
+	</div><!-- /page -->
+</body>
+
+</html>

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>KVS Troubleshooting</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.6.4.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+</head>
+
+<body>
+
+    <div data-role="page" id="card1">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>KVS Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>What symptoms are you experiencing?</h3>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card2">Blank blue screen.</a></li>
+                <li><a href="#card2">Blue screen saying Windows has stopped.</a></li>
+                <li><a href="#card2">Wrong display on monitor.</a></li>
+                <li><a href="#card2">Monitor display is backwards.</a></li>
+                <li><a href="#card18">No display on monitor (no power light).</a></li>
+                <li><a href="#card7">No display on monitor (orange power light).</a></li>
+                <li><a href="#card2">Display orientation is wrong.</a></li>
+                <li><a href="#card8">Single bump bar is not working.</a></li>
+                <li><a href="#card8">All bump bars are not working.</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card2">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>KVS Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Reboot the KVS controller.</h3>
+
+            <ol>
+                <li>The KVS controller is a small computer mounted behind the monitor.
+                    <ul>
+                        <li><strong>KVS 1</strong> - Behind side 1 lunch monitor.</li>
+                        <li><strong>KVS 2</strong> - Behind side 2 breakfast monitor <strong>OR</strong> behind DT expo
+                            monitor</li>
+                        <li><strong>KVS 3</strong> - Behind FC expo monitor</li>
+                        <li><strong>KVS 4 (CBB)</strong> - Mounted on the wall in the DT present booth</li>
+                        <li><strong>KVS 4 (BDAP)</strong> - Behind one of the DT present monitors</li>
+                        <li><strong>KVS 5</strong> - HOTG controller</li>
+                        <li><strong>KVS 6&7 (BDAP)</strong> - Behind each monitor in BDAP</li>
+                    </ul>
+                </li>
+                <li>Press the power button once and wait for the controller to shut down.</li>
+                <li>Press the power button again to boot up the KVS controller.</li>
+            </ol>
+
+            <p><strong>Did this solve your issue?</strong></p>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card3">Yes</a></li>
+                <li><a href="#card4">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card3">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>KVS Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Great! You"re good to go!</h3>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card1">Restart troubleshooting</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card4">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>KVS Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Contact your OTP for further troubleshooting.</h3>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card1">Restart troubleshooting</a></li>
+                <li><a href="tel:2566902564">Call your OTP.</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card6">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>KVS Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Check the power cable on the monitor. Make sure the cable is seated firmly in the power port.</h3>
+
+            <p><strong>Did this solve your issue?</strong></p>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card3">Yes</a></li>
+                <li><a href="#card4">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card7">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>KVS Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Is the KVS controller powered on?</h3>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card10">Yes</a></li>
+                <li><a href="#card11">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card8">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>KVS Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Check the cable on the bump bar.</h3>
+
+            <p><strong>Is the cable damaged?</strong></p>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card4">Yes</a></li>
+                <li><a href="#card12">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card9">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>KVS Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Check the cables on the bump bars.</h3>
+
+            <p><strong>Are any cables damaged?</strong></p>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card4">Yes</a></li>
+                <li><a href="#card13">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card10">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>KVS Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Check the VGA cable on both the monitor and KVS.</h3>
+
+            <p>The VGA cable is a blue display cable and should be connected to both the monitor and an adapter on the
+                KVS. Reseat the cable in both ports and reboot the controller.</p>
+
+            <p><strong>Did this solve your issue?</strong></p>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card3">Yes</a></li>
+                <li><a href="#card4">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card11">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>KVS Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Power on the KVS controller.</h3>
+
+            <p><strong>Did this solve your issue?</strong></p>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card3">Yes</a></li>
+                <li><a href="#card10">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card12">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>KVS Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Make sure the cable is connected to the left port of the bump bar. Reseat the cable.</h3>
+
+            <p><strong>Did this solve your issue?</strong></p>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card3">Yes</a></li>
+                <li><a href="#card14">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card13">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>KVS Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Make sure the cables are connected to the left port of the bump bar. Reseat the cables.</h3>
+
+            <p><strong>Did this solve your issue?</strong></p>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card3">Yes</a></li>
+                <li><a href="#card14">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card14">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>KVS Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Reboot the KVS controller.</h3>
+
+            <ol>
+                <li>The KVS controller is a small computer mounted behind the monitor.
+                    <ul>
+                        <li><strong>KVS 1</strong> - Behind side 1 lunch monitor.</li>
+                        <li><strong>KVS 2</strong> - Behind side 2 breakfast monitor <strong>OR</strong> behind DT expo
+                            monitor</li>
+                        <li><strong>KVS 3</strong> - Behind FC expo monitor</li>
+                        <li><strong>KVS 4 (CBB)</strong> - Mounted on the wall in the DT present booth</li>
+                        <li><strong>KVS 4 (BDAP)</strong> - Behind one of the DT present monitors</li>
+                        <li><strong>KVS 5</strong> - HOTG controller</li>
+                        <li><strong>KVS 6&7 (BDAP)</strong> - Behind each monitor in BDAP</li>
+                    </ul>
+                </li>
+                <li>Press the power button once and wait for the controller to shut down.</li>
+                <li>Press the power button again to boot up the KVS controller.</li>
+            </ol>
+
+            <p><strong>Did this solve your issue?</strong></p>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card3">Yes</a></li>
+                <li><a href="#card15">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card15">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>KVS Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Are the affected bump bars in the kitchen or service area?</h3>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card16">Kitchen</a></li>
+                <li><a href="#card17">Service</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card16">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>KVS Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Follow this temporary workaround:</h3>
+
+            <ol>
+                <li>Connect a keyboard to one of the front USB ports on the KVS.</li>
+                <li>Use the following commands on the keyboard:
+                    <ul>
+                        <li>A - Serve</li>
+                        <li>C - Next Order</li>
+                        <li>E - Side ON</li>
+                        <li>J - Side OFF</li>
+                    </ul>
+                </li>
+            </ol>
+
+            <p><strong>Did this enable functionality on the KVS?</strong></p>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card4">Yes</a></li>
+                <li><a href="#card4">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card17">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>KVS Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Activate the soft bump bar on Register 14:</h3>
+
+            <ol>
+                <li>Tap "Special Functions."</li>
+                <li>Tap "Soft Bump Bar."</li>
+                <li>Choose the KVS needed.</li>
+            </ol>
+
+            <p><strong>Did this enable functionality on the KVS?</strong></p>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card4">Yes</a></li>
+                <li><a href="#card4">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card18">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>KVS Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Press the power button (right-most button). If the button is missing, use a small object to press the
+                small, circular switch in its place.</h3>
+
+            <p><strong>Did this solve your issue?</strong></p>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card3">Yes</a></li>
+                <li><a href="#card6">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+</body>
+
+</html>

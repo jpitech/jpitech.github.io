@@ -1,0 +1,472 @@
+﻿<chart>
+<card_index>15</card_index>
+<cards>
+<card><card_top>14</card_top>
+<card_left>394</card_left>
+<card_width>100</card_width>
+<card_height>50</card_height>
+<card_jointspacing>20</card_jointspacing>
+<card_UID>1</card_UID>
+<card_text>Does the card reader have power?</card_text>
+<pictures />
+<att_files />
+<hlinks />
+<joints>
+<joint><joint_top>64</joint_top>
+<joint_left>494</joint_left>
+<joint_width>10</joint_width>
+<joint_height>10</joint_height>
+<joint_type>1</joint_type>
+<joint_belongToUID>1</joint_belongToUID>
+<joint_connectToUID>6</joint_connectToUID>
+<joint_textalign>0</joint_textalign>
+<joint_text>Yes</joint_text>
+</joint>
+<joint><joint_top>64</joint_top>
+<joint_left>384</joint_left>
+<joint_width>10</joint_width>
+<joint_height>10</joint_height>
+<joint_type>1</joint_type>
+<joint_belongToUID>1</joint_belongToUID>
+<joint_connectToUID>2</joint_connectToUID>
+<joint_textalign>1</joint_textalign>
+<joint_text>No</joint_text>
+</joint>
+</joints></card>
+<card><card_top>74</card_top>
+<card_left>240</card_left>
+<card_width>104</card_width>
+<card_height>48</card_height>
+<card_jointspacing>20</card_jointspacing>
+<card_UID>2</card_UID>
+<card_text>Reseat cable in the back of the card reader.
+
+Did this solve your issue?</card_text>
+<pictures />
+<att_files />
+<hlinks />
+<joints>
+<joint><joint_top>122</joint_top>
+<joint_left>344</joint_left>
+<joint_width>10</joint_width>
+<joint_height>10</joint_height>
+<joint_type>1</joint_type>
+<joint_belongToUID>2</joint_belongToUID>
+<joint_connectToUID>4</joint_connectToUID>
+<joint_textalign>0</joint_textalign>
+<joint_text>Yes</joint_text>
+</joint>
+<joint><joint_top>122</joint_top>
+<joint_left>230</joint_left>
+<joint_width>10</joint_width>
+<joint_height>10</joint_height>
+<joint_type>1</joint_type>
+<joint_belongToUID>2</joint_belongToUID>
+<joint_connectToUID>3</joint_connectToUID>
+<joint_textalign>1</joint_textalign>
+<joint_text>No</joint_text>
+</joint>
+</joints></card>
+<card><card_top>227</card_top>
+<card_left>247</card_left>
+<card_width>99</card_width>
+<card_height>63</card_height>
+<card_jointspacing>20</card_jointspacing>
+<card_UID>3</card_UID>
+<card_text>Check the multiport cable connections. Reseat power cables and check twist lock cable.
+
+Did this solve your issue?</card_text>
+<pictures />
+<att_files />
+<hlinks />
+<joints>
+<joint><joint_top>290</joint_top>
+<joint_left>346</joint_left>
+<joint_width>10</joint_width>
+<joint_height>10</joint_height>
+<joint_type>1</joint_type>
+<joint_belongToUID>3</joint_belongToUID>
+<joint_connectToUID>4</joint_connectToUID>
+<joint_textalign>0</joint_textalign>
+<joint_text>Yes</joint_text>
+</joint>
+<joint><joint_top>290</joint_top>
+<joint_left>237</joint_left>
+<joint_width>10</joint_width>
+<joint_height>10</joint_height>
+<joint_type>1</joint_type>
+<joint_belongToUID>3</joint_belongToUID>
+<joint_connectToUID>5</joint_connectToUID>
+<joint_textalign>1</joint_textalign>
+<joint_text>No</joint_text>
+</joint>
+</joints></card>
+<card><card_top>417</card_top>
+<card_left>43</card_left>
+<card_width>100</card_width>
+<card_height>50</card_height>
+<card_jointspacing>20</card_jointspacing>
+<card_UID>4</card_UID>
+<card_text>Great! You're good to go!</card_text>
+<pictures />
+<att_files />
+<hlinks />
+<joints>
+<joint><joint_top>467</joint_top>
+<joint_left>143</joint_left>
+<joint_width>10</joint_width>
+<joint_height>10</joint_height>
+<joint_type>1</joint_type>
+<joint_belongToUID>4</joint_belongToUID>
+<joint_connectToUID>1</joint_connectToUID>
+<joint_textalign>0</joint_textalign>
+<joint_text>Restart troubleshooting.</joint_text>
+</joint>
+</joints></card>
+<card><card_top>505</card_top>
+<card_left>45</card_left>
+<card_width>99</card_width>
+<card_height>63</card_height>
+<card_jointspacing>20</card_jointspacing>
+<card_UID>5</card_UID>
+<card_text>Contact your OTP for further support.</card_text>
+<pictures />
+<att_files />
+<hlinks />
+<joints>
+<joint><joint_top>568</joint_top>
+<joint_left>144</joint_left>
+<joint_width>10</joint_width>
+<joint_height>10</joint_height>
+<joint_type>1</joint_type>
+<joint_belongToUID>5</joint_belongToUID>
+<joint_connectToUID>1</joint_connectToUID>
+<joint_textalign>0</joint_textalign>
+<joint_text>Restart troubleshooting.</joint_text>
+</joint>
+</joints></card>
+<card><card_top>74</card_top>
+<card_left>542</card_left>
+<card_width>101</card_width>
+<card_height>63</card_height>
+<card_jointspacing>20</card_jointspacing>
+<card_UID>6</card_UID>
+<card_text>Are you receiving an error on the card reader or on the register?</card_text>
+<pictures />
+<att_files />
+<hlinks />
+<joints>
+<joint><joint_top>137</joint_top>
+<joint_left>643</joint_left>
+<joint_width>10</joint_width>
+<joint_height>10</joint_height>
+<joint_type>1</joint_type>
+<joint_belongToUID>6</joint_belongToUID>
+<joint_connectToUID>7</joint_connectToUID>
+<joint_textalign>0</joint_textalign>
+<joint_text>Yes</joint_text>
+</joint>
+<joint><joint_top>137</joint_top>
+<joint_left>532</joint_left>
+<joint_width>10</joint_width>
+<joint_height>10</joint_height>
+<joint_type>1</joint_type>
+<joint_belongToUID>6</joint_belongToUID>
+<joint_connectToUID>10</joint_connectToUID>
+<joint_textalign>1</joint_textalign>
+<joint_text>No</joint_text>
+</joint>
+</joints></card>
+<card><card_top>189</card_top>
+<card_left>598</card_left>
+<card_width>100</card_width>
+<card_height>50</card_height>
+<card_jointspacing>20</card_jointspacing>
+<card_UID>7</card_UID>
+<card_text>Reboot the card reader.
+
+A)	Press and hold 1-5-9
+B)	Enter the password 190711 and press Enter (green circle).
+C)	Tap Reboot. Takes between two and three minutes to get to the arches.
+
+Does the card reader say "Welcome to McDonad's"?</card_text>
+<pictures />
+<att_files />
+<hlinks />
+<joints>
+<joint><joint_top>239</joint_top>
+<joint_left>698</joint_left>
+<joint_width>10</joint_width>
+<joint_height>10</joint_height>
+<joint_type>1</joint_type>
+<joint_belongToUID>7</joint_belongToUID>
+<joint_connectToUID>12</joint_connectToUID>
+<joint_textalign>0</joint_textalign>
+<joint_text>Yes</joint_text>
+</joint>
+<joint><joint_top>239</joint_top>
+<joint_left>588</joint_left>
+<joint_width>10</joint_width>
+<joint_height>10</joint_height>
+<joint_type>1</joint_type>
+<joint_belongToUID>7</joint_belongToUID>
+<joint_connectToUID>8</joint_connectToUID>
+<joint_textalign>1</joint_textalign>
+<joint_text>No</joint_text>
+</joint>
+</joints></card>
+<card><card_top>300</card_top>
+<card_left>542</card_left>
+<card_width>100</card_width>
+<card_height>50</card_height>
+<card_jointspacing>20</card_jointspacing>
+<card_UID>8</card_UID>
+<card_text>Open the card reader manually.
+
+A)	Go to Cashless Maintenance Menu
+B)	Go to Manager → Support → Support
+C)	Password for second support menu is “Last Digit Year, Last Digit Month, Last Digit Day.”  Password for 10/15/2020 would be “050”
+D)	Tap “Cashless Maint”
+E)	Tap “Open PED”
+
+Did the register say "Successfully opened PED?"</card_text>
+<pictures />
+<att_files />
+<hlinks />
+<joints>
+<joint><joint_top>350</joint_top>
+<joint_left>642</joint_left>
+<joint_width>10</joint_width>
+<joint_height>10</joint_height>
+<joint_type>1</joint_type>
+<joint_belongToUID>8</joint_belongToUID>
+<joint_connectToUID>12</joint_connectToUID>
+<joint_textalign>0</joint_textalign>
+<joint_text>Yes</joint_text>
+</joint>
+<joint><joint_top>350</joint_top>
+<joint_left>532</joint_left>
+<joint_width>10</joint_width>
+<joint_height>10</joint_height>
+<joint_type>1</joint_type>
+<joint_belongToUID>8</joint_belongToUID>
+<joint_connectToUID>9</joint_connectToUID>
+<joint_textalign>1</joint_textalign>
+<joint_text>No</joint_text>
+</joint>
+</joints></card>
+<card><card_top>385</card_top>
+<card_left>487</card_left>
+<card_width>100</card_width>
+<card_height>50</card_height>
+<card_jointspacing>20</card_jointspacing>
+<card_UID>9</card_UID>
+<card_text>Re-pair and open the card reader manually.
+
+A)	Go to Cashless Maintenance Menu
+B)	Go to Manager → Support → Support
+C)	Password for second support menu is “Last Digit Year, Last Digit Month, Last Digit Day.”	Example: Password for 10/15/2020 would be “050”
+D)	Tap “Cashless Maint”
+E)	Tap “Pair PED” and type the code shown into the card reader. The code is NOT case-sensitive.
+F)	Tap “Open PED”
+
+Were you able to pair and open the card reader?
+</card_text>
+<pictures />
+<att_files />
+<hlinks />
+<joints>
+<joint><joint_top>435</joint_top>
+<joint_left>587</joint_left>
+<joint_width>10</joint_width>
+<joint_height>10</joint_height>
+<joint_type>1</joint_type>
+<joint_belongToUID>9</joint_belongToUID>
+<joint_connectToUID>12</joint_connectToUID>
+<joint_textalign>0</joint_textalign>
+<joint_text>Yes</joint_text>
+</joint>
+<joint><joint_top>435</joint_top>
+<joint_left>477</joint_left>
+<joint_width>10</joint_width>
+<joint_height>10</joint_height>
+<joint_type>1</joint_type>
+<joint_belongToUID>9</joint_belongToUID>
+<joint_connectToUID>5</joint_connectToUID>
+<joint_textalign>1</joint_textalign>
+<joint_text>No</joint_text>
+</joint>
+</joints></card>
+<card><card_top>147</card_top>
+<card_left>781</card_left>
+<card_width>100</card_width>
+<card_height>50</card_height>
+<card_jointspacing>20</card_jointspacing>
+<card_UID>10</card_UID>
+<card_text>Are you able to accept payment from all cards, including gift cards?</card_text>
+<pictures />
+<att_files />
+<hlinks />
+<joints>
+<joint><joint_top>197</joint_top>
+<joint_left>881</joint_left>
+<joint_width>10</joint_width>
+<joint_height>10</joint_height>
+<joint_type>1</joint_type>
+<joint_belongToUID>10</joint_belongToUID>
+<joint_connectToUID>5</joint_connectToUID>
+<joint_textalign>0</joint_textalign>
+<joint_text>Yes</joint_text>
+</joint>
+<joint><joint_top>197</joint_top>
+<joint_left>771</joint_left>
+<joint_width>10</joint_width>
+<joint_height>10</joint_height>
+<joint_type>1</joint_type>
+<joint_belongToUID>10</joint_belongToUID>
+<joint_connectToUID>11</joint_connectToUID>
+<joint_textalign>1</joint_textalign>
+<joint_text>No</joint_text>
+</joint>
+</joints></card>
+<card><card_top>254</card_top>
+<card_left>726</card_left>
+<card_width>100</card_width>
+<card_height>50</card_height>
+<card_jointspacing>20</card_jointspacing>
+<card_UID>11</card_UID>
+<card_text>Is the register saying "Authorizer not available?"</card_text>
+<pictures />
+<att_files />
+<hlinks />
+<joints>
+<joint><joint_top>304</joint_top>
+<joint_left>826</joint_left>
+<joint_width>10</joint_width>
+<joint_height>10</joint_height>
+<joint_type>1</joint_type>
+<joint_belongToUID>11</joint_belongToUID>
+<joint_connectToUID>7</joint_connectToUID>
+<joint_textalign>0</joint_textalign>
+<joint_text>Yes</joint_text>
+</joint>
+<joint><joint_top>304</joint_top>
+<joint_left>716</joint_left>
+<joint_width>10</joint_width>
+<joint_height>10</joint_height>
+<joint_type>1</joint_type>
+<joint_belongToUID>11</joint_belongToUID>
+<joint_connectToUID>13</joint_connectToUID>
+<joint_textalign>1</joint_textalign>
+<joint_text>No</joint_text>
+</joint>
+</joints></card>
+<card><card_top>543</card_top>
+<card_left>649</card_left>
+<card_width>100</card_width>
+<card_height>50</card_height>
+<card_jointspacing>20</card_jointspacing>
+<card_UID>12</card_UID>
+<card_text>Was the original issue resolved?</card_text>
+<pictures />
+<att_files />
+<hlinks />
+<joints>
+<joint><joint_top>593</joint_top>
+<joint_left>749</joint_left>
+<joint_width>10</joint_width>
+<joint_height>10</joint_height>
+<joint_type>1</joint_type>
+<joint_belongToUID>12</joint_belongToUID>
+<joint_connectToUID>4</joint_connectToUID>
+<joint_textalign>0</joint_textalign>
+<joint_text>Yes</joint_text>
+</joint>
+<joint><joint_top>593</joint_top>
+<joint_left>639</joint_left>
+<joint_width>10</joint_width>
+<joint_height>10</joint_height>
+<joint_type>1</joint_type>
+<joint_belongToUID>12</joint_belongToUID>
+<joint_connectToUID>5</joint_connectToUID>
+<joint_textalign>1</joint_textalign>
+<joint_text>No</joint_text>
+</joint>
+</joints></card>
+<card><card_top>339</card_top>
+<card_left>723</card_left>
+<card_width>100</card_width>
+<card_height>50</card_height>
+<card_jointspacing>20</card_jointspacing>
+<card_UID>13</card_UID>
+<card_text>Is the card reader accepting all chip cards?</card_text>
+<pictures />
+<att_files />
+<hlinks />
+<joints>
+<joint><joint_top>389</joint_top>
+<joint_left>823</joint_left>
+<joint_width>10</joint_width>
+<joint_height>10</joint_height>
+<joint_type>1</joint_type>
+<joint_belongToUID>13</joint_belongToUID>
+<joint_connectToUID>14</joint_connectToUID>
+<joint_textalign>0</joint_textalign>
+<joint_text>Yes</joint_text>
+</joint>
+<joint><joint_top>389</joint_top>
+<joint_left>713</joint_left>
+<joint_width>10</joint_width>
+<joint_height>10</joint_height>
+<joint_type>1</joint_type>
+<joint_belongToUID>13</joint_belongToUID>
+<joint_connectToUID>15</joint_connectToUID>
+<joint_textalign>1</joint_textalign>
+<joint_text>No</joint_text>
+</joint>
+</joints></card>
+<card><card_top>421</card_top>
+<card_left>730</card_left>
+<card_width>100</card_width>
+<card_height>50</card_height>
+<card_jointspacing>20</card_jointspacing>
+<card_UID>14</card_UID>
+<card_text>Is the card reader accepting all card swipes?</card_text>
+<pictures />
+<att_files />
+<hlinks />
+<joints>
+<joint><joint_top>471</joint_top>
+<joint_left>830</joint_left>
+<joint_width>10</joint_width>
+<joint_height>10</joint_height>
+<joint_type>1</joint_type>
+<joint_belongToUID>14</joint_belongToUID>
+<joint_connectToUID>5</joint_connectToUID>
+<joint_textalign>0</joint_textalign>
+<joint_text>Yes</joint_text>
+</joint>
+<joint><joint_top>471</joint_top>
+<joint_left>720</joint_left>
+<joint_width>10</joint_width>
+<joint_height>10</joint_height>
+<joint_type>1</joint_type>
+<joint_belongToUID>14</joint_belongToUID>
+<joint_connectToUID>15</joint_connectToUID>
+<joint_textalign>1</joint_textalign>
+<joint_text>No</joint_text>
+</joint>
+</joints></card>
+<card><card_top>368</card_top>
+<card_left>934</card_left>
+<card_width>100</card_width>
+<card_height>50</card_height>
+<card_jointspacing>20</card_jointspacing>
+<card_UID>15</card_UID>
+<card_text>Verify the card chip/mag stripe is not physically damaged. If there is no damage to the card, contact your OTP.</card_text>
+<pictures />
+<att_files />
+<hlinks />
+<joints /></card>
+</cards>
+</chart>

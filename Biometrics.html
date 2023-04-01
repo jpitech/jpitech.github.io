@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Biometrics Troubleshooting</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.6.4.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+
+</head>
+
+<body>
+    <div data-role='page' id='card1'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+            <h1>Biometrics Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>What symptoms are you experiencing?</h3>
+            <ul data-role='listview' data-inset='true'>
+                <li><a href='#card4'>Fingerprint reader is not lit up.</a></li>
+                <li><a href='#card6'>Fingerprint reader will not accept scan.</a></li>
+                <li><a href='#card3'>None of the above</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role='page' id='card2'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+
+            <h1>Biometrics Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>Great! You're good to go!</h3>
+            <ul data-role='listview' data-inset='true'>
+                <li><a href="#card1">Restart troubleshooting</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role='page' id='card3'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+
+            <h1>Biometrics Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>Contact your OTP for further troubleshooting.</h3>
+            <ul data-role='listview' data-inset='true'>
+                <li><a href="#card1">Restart troubleshooting</a></li>
+                <li><a href="tel:2566902564">Call your OTP.</a>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role='page' id='card4'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+            <h1>Biometrics Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>Check the USB cable on the register.</h3>
+
+            <p>Find the USB cable for the fingerprint reader. It should have a small black sticker on the cable. You may
+                have to remove the cable cover on the register to see it. Unplug and plug the cable in a black USB port.
+            </p>
+
+            <p>Did this solve your issue?</p>
+
+            <ul data-role='listview' data-inset='true'>
+                <li><a href="#card2">Yes</a></li>
+                <li><a href="#card5">No</a>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role='page' id='card5'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+            <h1>Biometrics Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>Connect the cable to a different USB port.</h3>
+
+            <p>Find the USB cable for the fingerprint reader. It should have a small black sticker on the cable. You may
+                have to remove the cable cover on the register to see it. Plug it into a different USB port to rule out
+                a bad port.</p>
+
+            <p><strong>Did this solve your issue?</strong></p>
+
+            <ul data-role='listview' data-inset='true'>
+                <li><a href="#card2">Yes</a></li>
+                <li><a href="#card3">No</a>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role='page' id='card6'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+            <h1>Biometrics Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>Is it only on a single register or on all registers?</h3>
+            <ul data-role='listview' data-inset='true'>
+                <li><a href='#card7'>Single register</a></li>
+                <li><a href='#card10'>All registers</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role='page' id='card7'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+            <h1>Biometrics Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>Clean the fingerprint reader.</h3>
+
+            <p>Use a piece of clear Scotch tape to clean the fingerprint reader. <strong>DO NOT use anything other than
+                    a piece of tape to clean the fingerprint reader.</strong> Any liquids or chemicals may damage the
+                fingerprint reader.</p>
+
+            <p><strong>Did this solve your issue?</strong></p>
+            <ul data-role='listview' data-inset='true'>
+                <li><a href='#card2'>Yes</a></li>
+                <li><a href='#card8'>No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role='page' id='card8'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+            <h1>Biometrics Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>Does the fingerprint reader surface look clear or cloudy?</h3>
+
+            <ul data-role='listview' data-inset='true'>
+                <li><a href='#card9'>Clear</a></li>
+                <li><a href='#card3'>Cloudy</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role='page' id='card9'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+            <h1>Biometrics Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>Reboot the register.</h3>
+
+            <p>Press the power button once and allow the register to shut down. Press the power button again to boot the
+                register back up. <strong>DO NOT press and hold the power button to shut down the register. Data
+                    corruption may occur if this method is used.</strong></p>
+
+            <p><strong>Did this solve your issue?</strong></p>
+            <ul data-role='listview' data-inset='true'>
+                <li><a href='#card2'>Yes</a></li>
+                <li><a href='#card3'>No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role='page' id='card10'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+            <h1>Biometrics Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>Verify your fingerprint is enrolled.</h3>
+
+            <p>On the back office server, open the McDonald's Biometrics application. Attempt to log in with your finger
+                scan.</p>
+
+            <p><strong>Were you able to log in using your finger scan?</strong></p>
+
+            <ul data-role='listview' data-inset='true'>
+                <li><a href='#card3'>Yes</a></li>
+                <li><a href='#card11'>No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role='page' id='card11'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+            <h1>Biometrics Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>Re-enroll your finger scan.</h3>
+
+            <p>On the back office server, open the McDonald's Biometrics application. Log in using your time card
+                number. Follow the directions to re-enroll your finger scan. NOTE: Finger scans expire one year after
+                creating the finger scan record. You will need to re-enroll your finger after a year has passed.</p>
+
+            <p>After re-enrolling your finger scan, test the new scan by accessing the manager menu on the register.</p>
+
+            <p><strong>Were you able to access the manager menu by using your finger scan?</strong></p>
+
+            <ul data-role='listview' data-inset='true'>
+                <li><a href='#card2'>Yes</a></li>
+                <li><a href='#card3'>No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+</body>
+
+</html>

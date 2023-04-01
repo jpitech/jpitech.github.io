@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>POS Server Troubleshooting</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.6.4.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+
+</head>
+
+<body>
+    <div data-role='page' id='card1'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+            <h1>POS Server Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3 style="color:red;font-weight:700;text-align:center;">WARNING! Any troubleshooting performed with the POS
+                server and/or Production should be
+                done with the consultation of your OTP. It is highly recommended you contact your OTP before performing
+                this troubleshooting. Any serious errors can prevent the store from opening, closing, or running under
+                normal conditions. Proceed at your own risk!</h3>
+            <ul data-role='listview' data-inset='true'>
+                <li><a href='#card2'>I understand and wish to continue.</a></li>
+                <li><a href='tel:2566902564'>Call your OTP.</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role='page' id='card2'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+            <h1>POS Server Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>What issue are you experiencing?</strong></h3>
+            <ul data-role='listview' data-inset='true'>
+                <li><a href='#card5'>"Unable to communicate with the monitors" on all registers</a></li>
+                <li><a href='#card5'>"Production Offline" on all KVS screens</a></li>
+                <li><a href='#card12'>"Standard" blinking red and white on KVS screens.</a></li>
+                <li><a href='#card17'>Full reboot instructions</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role='page' id='card3'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+            <h1>POS Server Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>Great! You're good to go!</h3>
+            <ul data-role='listview' data-inset='true'>
+                <li><a href="#card1">Restart troubleshooting</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role='page' id='card4'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+            <h1>POS Server Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>Contact your OTP for further troubleshooting.</h3>
+            <ul data-role='listview' data-inset='true'>
+                <li><a href="#card1">Restart troubleshooting</a></li>
+                <li><a href="tel:2566902564">Call your OTP.</a>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role='page' id='card5'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+            <h1>POS Server Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>Put the store in backup production.</h3>
+
+            <ol>
+                <li>Ring up a water, and total out the order.</li>
+                <li>The register should show <em>Unable to communicate with the monitors. Would you like to try
+                        again?</strong></em> Press <em>No.</em></li>
+                <li>The register should show <em>Error sending order to one or more monitors? Would you like to switch
+                        to
+                        backup mode?</strong></em> Press
+                    <em>Yes.</em>
+                </li>
+                <li>Watch the bottom of the KVS screens. Once <em>Standard</em> switches from white to red, the store
+                    will be in backup mode.
+                    <ul>
+                        <li><strong>NOTE:</strong> If your store is on SP10, production may switch on its own.</li>
+                    </ul>
+                </li>
+            </ol>
+
+            <p><strong>Were you able to switch to backup production?</strong></strong></p>
+            <ul data-role='listview' data-inset='true'>
+                <li><a href="#card6">Yes</a></li>
+                <li><a href="#card10">No</a>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role='page' id='card6'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+            <h1>POS Server Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>Reboot the POS server VM</h3>
+
+            <p>In the back office, change the KVM input to PC2 with one of the following methods:</p>
+
+            <ul>
+                <li>Press Scroll Lock twice &rarr; 2</li>
+                <li>Press Scroll Lock twice &rarr; wait for the menu to appear &rarr; Select input 2 and press Enter.
+                </li>
+                <li>Press the button on the switch to change the input to PC2.</li>
+            </ul>
+
+            <p>You should see the POS server virtual machine by default. If you see a green background with
+                <em>McDonald's
+                    Host Server Easy Access</em>, click <em>View Virtual Machines</em> to view the POS server. Click
+                <em>Shutdown VM</em> or <em>Shutdown OS</em>, wait for the machine to shut down, and click <em>Start
+                    VM</em>.
+            </p>
+
+            <p>Once the POS server finishes loading all software, check the icons on the taskbar. There should be an NP#
+                icon (looks like a pound sign or hashtag). Hover your mouse over the NP icon and verify there are five
+                boxes
+                showing.
+                <strong style="color:red;">If there are less than five boxes or if the NP# icon is not present, call
+                    your OTP!</strong>
+            </p>
+
+            <p><strong>Has everything loaded correctly on the POS server VM?</strong></strong></p>
+            <ul data-role='listview' data-inset='true'>
+                <li><a href="#card7">Yes</a></li>
+                <li><a href="#card4">No</a>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role='page' id='card7'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+            <h1>POS Server Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>Promote the store to primary production.</h3>
+
+            <ol>
+                <li>Go to any register, preferably one on front counter.</li>
+                <li>Access the manager menu.</li>
+                <li>Press <em>Promote to Primary Production</em> once.
+                    <ul>
+                        <li><strong>NOTE:</strong> Switching production is not instant. It takes anywhere from a few
+                            seconds to a couple
+                            of minutes to switch to primary production.</li>
+                    </ul>
+                </li>
+                <li>Watch the text on the bottom of the KVS screens. Once <em>Standard</em> switches from red to white,
+                    the store is in primary production. The register will also say <em>Production has been
+                    switched.</em>
+                </li>
+            </ol>
+
+            <p><strong>Were you able to promote to primary production?</strong></p>
+            <ul data-role='listview' data-inset='true'>
+                <li><a href="#card3">Yes</a></li>
+                <li><a href="#card8">No</a>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role='page' id='card8'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+            <h1>POS Server Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>Shut down register 1 and retry promoting to primary.</h3>
+
+            <p style="color:red;"><strong>NOTE: Shutting down register 1 while in backup will take the store down while
+                    the register is offline!</strong></p>
+
+            <p>Press the power button on register 1 once to shut down the register.</p>
+
+            <ol>
+                <li>Go to any register, preferably one on front counter.</li>
+                <li>Access the manager menu.</li>
+                <li>Press <em>Promote to Primary Production</em> once.
+                    <ul>
+                        <li><strong>NOTE:</strong> Switching production is not instant. It takes anywhere from a few
+                            seconds to a couple
+                            of minutes to switch to primary production.</li>
+                    </ul>
+                </li>
+                <li>Watch the text on the bottom of the KVS screens. Once <em>Standard</em> switches from red to white,
+                    the store is in primary production. The register will also say <em>Production has been
+                    switched.</em>
+                </li>
+            </ol>
+
+            <p><strong>Were you able to promote to primary production?</strong></p>
+            <ul data-role='listview' data-inset='true'>
+                <li><a href="#card9">Yes</a></li>
+                <li><a href="#card4">No</a>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role='page' id='card9'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+            <h1>POS Server Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>Bring register 1 back up.</h3>
+
+            <p>Press the power button on register 1 once to boot the register.</p>
+
+            <p><strong>Did the register come back up normally?</strong></p>
+            <ul data-role='listview' data-inset='true'>
+                <li><a href="#card3">Yes</a></li>
+                <li><a href="#card4">No</a>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role='page' id='card10'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+            <h1>POS Server Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>Reboot register 1 and shut down the POS server VM.</h3>
+
+            <ol>
+                <li>Press the power button on register 1 once to shut down the register.</li>
+                <li>In the back office, change the KVM input to PC2 with one of the following methods:
+                    <ul>
+                        <li>Press Scroll Lock twice &rarr; 2</li>
+                        <li>Press Scroll Lock twice &rarr; wait for the menu to appear &rarr; Select input 2 and press
+                            Enter.
+                        </li>
+                        <li>Press the button on the switch to change the input to PC2.</li>
+                    </ul>
+                </li>
+                <li>You should see the POS server virtual machine by default.
+                    <ul>
+                        <li>If you see a green background with <em>McDonald's Host Server Easy Access</em>, click
+                            <em>View Virtual Machines</em> to view the POS server.
+                        </li>
+                    </ul>
+                </li>
+                <li>Click <em>Shutdown VM</em> or <em>Shutdown OS</em> to shut down the POS server.</li>
+                <li>Boot register 1 back up by pressing the power button.</li>
+                <li>Retry putting the store in backup production using the steps listed previously.</li>
+            </ol>
+
+            <p><strong>Were you able to put the store in backup production?</strong></p>
+            <ul data-role='listview' data-inset='true'>
+                <li><a href="#card11">Yes</a></li>
+                <li><a href="#card4">No</a>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role='page' id='card11'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+            <h1>POS Server Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>Boot the POS server VM.</h3>
+
+            <p><strong>NOTE:</strong> The KVM switch should still be set to the POS server from the previous step.</p>
+
+            <ol>
+                <li>Click <em>Start VM</em> to boot the POS server VM.</li>
+                <li>Once the POS server finishes loading all software, check the icons on the taskbar. There should be an NP#
+                    icon (looks like a pound sign or hashtag).</li>
+                <li>Hover your mouse over the NP# icon and verify there are five boxes
+                    showing.
+                    <ul>
+                        <li><strong style="color:red;">If there are less than five boxes or if the NP# icon is not
+                                present,
+                                call your OTP!</strong></li>
+                    </ul>
+                </li>
+            </ol>
+
+            <p><strong>Has everything loaded correctly on the POS server VM?</strong></p>
+            <ul data-role='listview' data-inset='true'>
+                <li><a href="#card7">Yes</a></li>
+                <li><a href="#card8">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role='page' id='card12'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+            <h1>POS Server Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>Check the POS server.</h3>
+
+            <ol>
+                <li>In the back office, change the KVM input to PC2 with one of the following methods:
+                    <ul>
+                        <li>Press Scroll Lock twice &rarr; 2</li>
+                        <li>Press Scroll Lock twice &rarr; wait for the menu to appear &rarr; Select input 2 and press
+                            Enter.
+                        </li>
+                        <li>Press the button on the switch to change the input to PC2.</li>
+                    </ul>
+                </li>
+                <li>You should see the POS server virtual machine by default.
+                    <ul>
+                        <li>If you see a green background with <em>McDonald's Host Server Easy Access</em>, click
+                            <em>View Virtual Machines</em> to view the POS server.
+                        </li>
+                    </ul>
+                </li>
+                <li>Check the icons on the bottom of the screen. There should be an NP# icon (looks like a pound sign or hashtag).</li>
+                <li>Hover your mouse over the NP# icon and verify there are five boxes showing</li>
+            </ol>
+
+            <p><strong>Is everything showing correctly on the POS server VM?</strong></p>
+            <ul data-role='listview' data-inset='true'>
+                <li><a href="#card13">Yes</a></li>
+                <li><a href="#card15">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role='page' id='card13'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+            <h1>POS Server Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>Shut down register 1.</h3>
+
+            <p>Press the power button once to shut down register 1. Let it shut down completely, and press the power
+                button again to boot it back up.</p>
+
+            <p><strong>Did the register come back up normally?</strong></p>
+            <ul data-role='listview' data-inset='true'>
+                <li><a href="#card14">Yes</a></li>
+                <li><a href="#card4">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role='page' id='card14'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+            <h1>POS Server Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>Check the KVS for the original issue.</h3>
+
+            <p>Look at <em>Standard</em> on the KVS screens. It should be in white. Watch it for about 30 seconds to
+                verify the issue is resolved.</p>
+
+            <p><strong>Has the text stopped blinking red and white?</strong></p>
+            <ul data-role='listview' data-inset='true'>
+                <li><a href="#card3">Yes</a></li>
+                <li><a href="#card4">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role='page' id='card15'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+            <h1>POS Server Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>Shut down the POS server VM and verify the store is in backup production.</h3>
+
+            <p><strong>NOTE:</strong> The KVM switch should still be set to the POS server from the previous step.</p>
+
+            <ol>
+                <li>Click <em>Shutdown VM</em> or <em>Shutdown OS</em> to shut down the POS server VM.</li>
+                <li>Once the POS server shuts down, look at <em>Standard</em> on any KVS. The text should be in red.
+                </li>
+            </ol>
+
+            <p><strong>Is the text in red, and are you able to take orders?</strong></p>
+            <ul data-role='listview' data-inset='true'>
+                <li><a href="#card16">Yes</a></li>
+                <li><a href="#card5">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role='page' id='card16'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+            <h1>POS Server Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>Boot the POS server VM</h3>
+
+            <p><strong>NOTE:</strong> The KVM switch should still be set to the POS server from the previous step.</p>
+
+            <ol>
+                <li>Click <em>Start VM</em> to boot the POS server VM.</li>
+                <li>Once the POS server finishes loading all software, check the icons on the taskbar. There should be an
+                    NP# icon (looks like a pound sign or hashtag).</li>
+                <li>Hover your mouse over the NP icon and verify there are five boxes showing.
+                    <ul>
+                        <li><strong style="color:red;">If there are less than five boxes or if the NP# icon is not
+                                present, call your OTP!</strong></li>
+                    </ul>
+                </li>
+            </ol>
+
+            <p><strong>Did everything load correctly on the POS server VM?</strong></p>
+            <ul data-role='listview' data-inset='true'>
+                <li><a href="#card7">Yes</a></li>
+                <li><a href="#card4">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role='page' id='card17'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+            <h1>POS Server Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>Full POS Server Reboot Instructions</h3>
+
+            <ol>
+                <li>In the back office, change the KVM input to PC2 with one of the following methods:
+                    <ul>
+                        <li>Press Scroll Lock twice &rarr; 2</li>
+                        <li>Press Scroll Lock twice &rarr; wait for the menu to appear &rarr; Select input 2 and press
+                            Enter.
+                        </li>
+                        <li>Press the button on the switch to change the input to PC2.</li>
+                    </ul>
+                </li>
+                <li>You should see the POS server virtual machine by default.
+                    <ul>
+                        <li>If you see a green background with <em>McDonald's Host Server Easy Access</em>, click
+                            <em>View Virtual Machines</em> to view the POS server.
+                        </li>
+                    </ul>
+                </li>
+                <li>Click <em>Shutdown VM</em> or <em>Shutdown OS</em>.</li>
+                <li>Put the store in backup production.
+                    <ol>
+                        <li>Go to a front counter register.</li>
+                        <li>Ring up a water and total out the order.</li>
+                        <li>"<em>Unable to communicate with the monitors</em>" should pop up.</li>
+                        <li>Tap <em>No.</em></li>
+                        <li>Tap <em>Yes</em> when asked to switch to backup.</li>
+                        <li>Watch the text on the bottom of your KVS monitors. Once <em>Standard</em> switches to red,
+                            the store is in backup production.</li>
+                        <li><strong>NOTE:</strong> If your store is on SP10, the store may switch to backup production
+                            automatically.</li>
+                    </ol>
+                </li>
+                <li>Click <em>Start VM</em> on the POS server, and wait for the software to fully load.</li>
+                <li>Check the icons on the bottom of the screen. There should be an NP# icon (looks like a pound sign or hashtag).</li>
+                <li>Hover your mouse over the NP# icon and verify there are five boxes showing.</li>
+                <li>If everything is running correctly, switch the store to primary production.
+                    <ol>
+                        <li>Go to any register.</li>
+                        <li>Go to <em>Manager</em> &rarr; <em>Support</em>.</li>
+                        <li>Tap <em>Promote to Primary Production</em>.
+                            <ul>
+                                <li><strong>NOTE:</strong> The switch from backup to primary is
+                                    <em><strong>not</strong></em> instant! Only press the button once!
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Watch the text at the bottom of your KVS monitors. Once <em>Standard</em> switches from red
+                            to white, the store will be back in primary.</li>
+                    </ol>
+                </li>
+            </ol>
+
+            <p><strong>Were you able to promote to primary successfully?</strong></p>
+            <ul data-role='listview' data-inset='true'>
+                <li><a href="#card3">Yes</a></li>
+                <li><a href="#card4">No</a>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+</body>
+
+</html>

@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Office Printer Troubleshooting</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.6.4.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+
+</head>
+
+<body>
+    <div data-role='page' id='card1'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+            <h1>Office Printer Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>What symptoms are you experiencing?</h3>
+            <ul data-role='listview' data-inset='true'>
+                <li><a href='#card4'>Printer does not print on BOS.</a></li>
+                <li><a href='#card8'>Printer does not print on email system.</a></li>
+                <li><a href='#card11'>Printer has no power.</a></li>
+                <li><a href='#card12'>Printer does not print legibly.</a></li>
+                <li><a href='#card15'>Printer has black bars running down the sides of the paper.</a></li>
+                <li><a href='#card16'>Printer has poor quality copies from glass.</a></li>
+                <li><a href='#card18'>Printer has poor quality copies from document feeder.</a></li>
+                <li><a href='#card3'>Printer will not feed documents in document feeder.</a></li>
+                <li><a href='#card3'>Printer shows paper jam without a visible jam.</a></li>
+                <li><a href='#card19'>Printer will not send or receive faxes.</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role='page' id='card2'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+
+            <h1>Office Printer Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>Great! You're good to go!</h3>
+            <ul data-role='listview' data-inset='true'>
+                <li><a href="#card1">Restart troubleshooting</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role='page' id='card3'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+
+            <h1>Office Printer Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>Contact your OTP for further troubleshooting.</h3>
+            <ul data-role='listview' data-inset='true'>
+                <li><a href="#card1">Restart troubleshooting</a></li>
+                <li><a href="tel:2566902564">Call your OTP.</a>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role='page' id='card4'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+
+            <h1>Office Printer Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>Check the network cable connection.</h3>
+
+            <p>Verify the network cable is connected to the printer, and check the connector for damage.</p>
+
+            <ol>
+                <li>Disconnect the network cable from the back of the printer.</li>
+                <li>Inspect the cable for any damage.</li>
+                <li>Plug the cable back in.</li>
+            </ol>
+
+            <p><strong>Did this solve your issue?</strong></p>
+            <ul data-role='listview' data-inset='true'>
+                <li><a href="#card2">Yes</a></li>
+                <li><a href="#card5">No</a></li>
+                <li><a href="#card3">Cable is damaged.</a></li>
+                <li><a href="#card3">Cable does not stay plugged in.</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role='page' id='card5'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+
+            <h1>Office Printer Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>Reboot the printer</h3>
+
+            <ol>
+                <li>Press the power button once and allow the printer to shut down.</li>
+                <li>Press the power button once again and allow the printer to fully initialize.</li>
+                <li>Retry the print job.</li>
+            </ol>
+
+            <p><strong>Did this solve your issue?</strong></p>
+            <ul data-role='listview' data-inset='true'>
+                <li><a href="#card2">Yes</a></li>
+                <li><a href="#card6">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role='page' id='card6'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+
+            <h1>Office Printer Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>Check the printer settings.</h3>
+
+            <p>On the back office server, check the printer settings to verify they are correct.</p>
+
+            <ol>
+                <li>Double-click <em>Manage Printers.</em></li>
+                <li>Verify <em>Printer Type</em> is set to <em>HP_Universal</em>.</li>
+                <li>Verify <em>Printer Interface</em> is set to <em>Network Port/DLINK</em>.</li>
+                <li>Make any changes necessary and click <em>Exit</em>.</li>
+            </ol>
+
+            <p><strong>Did this solve your issue?</strong></p>
+            <ul data-role='listview' data-inset='true'>
+                <li><a href="#card2">Yes</a></li>
+                <li><a href="#card7">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role='page' id='card7'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+
+            <h1>Office Printer Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>Reboot the BOS</h3>
+
+            <ol>
+                <li>Press the Windows key on the keyboard.</li>
+                <li>Click <em>Restart</em>.</li>
+                <li>Allow the BOS to fully boot.</li>
+                <li>Log in and retry the print job.</li>
+            </ol>
+
+            <p><strong>Did this solve your issue?</strong></p>
+            <ul data-role='listview' data-inset='true'>
+                <li><a href="#card2">Yes</a></li>
+                <li><a href="#card3">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role='page' id='card8'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+
+            <h1>Office Printer Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>Reseat the USB cable on the printer.</h3>
+
+            <ol>
+                <li>Find the USB cable on the back of the printer.</li>
+                <li>Reseat the cable.</li>
+            </ol>
+
+            <p><strong>Did this solve your issue?</strong></p>
+            <ul data-role='listview' data-inset='true'>
+                <li><a href="#card2">Yes</a></li>
+                <li><a href="#card9">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role='page' id='card9'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+
+            <h1>Office Printer Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>Reseat the USB cable on the email system.</h3>
+
+            <ol>
+                <li>Find where the USB cable connects to the email system</li>
+                <li>Reseat the cable.</li>
+            </ol>
+
+            <p><strong>Did this solve your issue?</strong></p>
+            <ul data-role='listview' data-inset='true'>
+                <li><a href="#card2">Yes</a></li>
+                <li><a href="#card10">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role='page' id='card10'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+
+            <h1>Office Printer Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>Reboot the email system.</h3>
+
+            <p><strong>Did this solve your issue?</strong></p>
+            <ul data-role='listview' data-inset='true'>
+                <li><a href="#card2">Yes</a></li>
+                <li><a href="#card3">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role='page' id='card11'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+
+            <h1>Office Printer Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>Reseat the power cable.</h3>
+
+            <p><strong>Did this solve your issue?</strong></p>
+            <ul data-role='listview' data-inset='true'>
+                <li><a href="#card2">Yes</a></li>
+                <li><a href="#card3">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role='page' id='card12'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+
+            <h1>Office Printer Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>Reseat the toner cartridge.</h3>
+
+            <p><strong>Did this solve your issue?</strong></p>
+            <ul data-role='listview' data-inset='true'>
+                <li><a href="#card2">Yes</a></li>
+                <li><a href="#card13">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role='page' id='card13'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+
+            <h1>Office Printer Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>Remove and shake the toner cartridge.</h3>
+
+            <p>Pull out the toner cartridge and shake it vigorously to loosen the toner powder in the cartridge.
+                <strong>NOTE:</strong> If shaking the toner cartridge fixes your issue, the cartridge will need to be
+                replaced in the near future.</p>
+
+            <p><strong>Did this solve your issue?</strong></p>
+            <ul data-role='listview' data-inset='true'>
+                <li><a href="#card2">Yes</a></li>
+                <li><a href="#card14">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role='page' id='card14'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+
+            <h1>Office Printer Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>Replace the toner cartridge.</h3>
+
+            <p>If you do not have a new toner cartridge on hand, you will need to order one with the supply order form.
+            </p>
+
+            <p><strong>Did this solve your issue?</strong></p>
+            <ul data-role='listview' data-inset='true'>
+                <li><a href="#card2">Yes</a></li>
+                <li><a href="#card3">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role='page' id='card15'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+
+            <h1>Office Printer Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>Replace the imaging drum.</h3>
+
+            <p><strong>NOTE:</strong> This only applies if your printer uses a 30A toner cartridge. If your printer uses
+                a 78A toner cartridge, your imaging drum is built into the toner cartridge.</p>
+
+            <p>If your printer has a separate imaging drum and you do not have one on hand, you will need to order one
+                with the supply order form. The imaging drum is a 32A cartridge.</p>
+
+            <p><strong>Did this solve your issue?</strong></p>
+            <ul data-role='listview' data-inset='true'>
+                <li><a href="#card2">Yes</a></li>
+                <li><a href="#card3">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role='page' id='card16'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+
+            <h1>Office Printer Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>Clean the glass on the printer.</h3>
+
+            <p>When cleaning the glass, do not spray anything directly on the printer. Spray cleaning solution on a
+                paper towel.</p>
+
+            <p><strong>Did this solve your issue?</strong></p>
+            <ul data-role='listview' data-inset='true'>
+                <li><a href="#card2">Yes</a></li>
+                <li><a href="#card3">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role='page' id='card18'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+
+            <h1>Office Printer Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>Clean the document feeder.</h3>
+
+            <p>Open the document feeder. Use canned air to blow any dust or debris out of the feeder.</p>
+
+            <p><strong>Did this solve your issue?</strong></p>
+            <ul data-role='listview' data-inset='true'>
+                <li><a href="#card2">Yes</a></li>
+                <li><a href="#card3">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role='page' id='card19'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+
+            <h1>Office Printer Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>Check the phone line cables.</h3>
+
+            <p>There should be at least one phone line cable connected to the back of the printer. Make sure the cable
+                is connected to the top phone jack on the printer.</p>
+
+            <p><strong>Did this solve your issue?</strong></p>
+            <ul data-role='listview' data-inset='true'>
+                <li><a href="#card2">Yes</a></li>
+                <li><a href="#card19">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role='page' id='card20'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+
+            <h1>Office Printer Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>Check for dial tone.</h3>
+
+            <p>Plug the cable into the phone base to verify there is dial tone on the line.</p>
+
+            <p><strong>Was there dial tone on the line?</strong></p>
+            <ul data-role='listview' data-inset='true'>
+                <li><a href="#card3">Yes</a></li>
+                <li><a href="#card21">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role='page' id='card21'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+
+            <h1>Office Printer Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>Connect the fax line to a known working phone jack.</h3>
+
+            <p>Move the fax line to a known working phone jack. If possible, use the jack the phone is connected to, and
+                connect the phone to the bottom jack on the printer for a passthrough connection.</p>
+
+            <p><strong>Was there dial tone on the line?</strong></p>
+            <ul data-role='listview' data-inset='true'>
+                <li><a href="#card2">Yes</a></li>
+                <li><a href="#card3">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+</body>
+
+</html>

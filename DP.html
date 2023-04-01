@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dual Point Troubleshooting</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.6.4.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+</head>
+
+<body>
+
+    <div data-role="page" id="card1">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>Dual Point Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>What symptoms are you experiencing?</h3>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card4">Main screen is not displaying properly.</a></li>
+                <li><a href="#card4">Small screen is blue.</a></li>
+                <li><a href="#card5">Scanner is not working.</a></li>
+                <li><a href="#card7">Both screens are blank.</a></li>
+                <li><a href="#card3">None of the above.</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card2">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>Dual Point Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Great! You're good to go!</h3>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card1">Restart troubleshooting.</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card3">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>Dual Point Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Contact your OTP for further troubleshooting.</h3>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card1">Restart troubleshooting.</a></li>
+                <li><a href="tel:2566902564">Call your OTP.</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card4">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>Dual Point Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Reboot the controller.</h3>
+
+            <p>The Dual Point controller is a small computer in the tech closet or mounted on the wall in the office. It
+                is either a Dell or HP thin client. Press the power button once to shut down the controller. Once the
+                lights on the controller are off, press the power button again to bring it back up.</p>
+
+            <p><strong>Did this solve your issue?</strong></p>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card2">Yes</a></li>
+                <li><a href="#card3">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card5">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>Dual Point Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Check the printer's print quality.</h3>
+
+            <p>Move the printer to a frount counter register and reprint a receipt.</p>
+
+            <p><strong>Does the printer print clearly?</strong></p>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card4">Yes</a></li>
+                <li><a href="#card3">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+    
+    <div data-role="page" id="card7">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>Dual Point Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Power on the Dual Point controller.</h3>
+
+            <p>The Dual Point controller is a small computer in the tech closet or mounted on the wall in the office. It
+                is either a Dell or HP thin client. Press the power button to boot the controller.</p>
+
+            <p><strong>Did this solve your issue?</strong></p>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card2">Yes</a></li>
+                <li><a href="#card3">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+</body>
+
+</html>

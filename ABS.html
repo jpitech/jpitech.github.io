@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ABS Troubleshooting</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.6.4.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+</head>
+
+<body>
+
+    <div data-role="page" id="card1">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>ABS Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>What symptoms are you experiencing?</h3>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card5">ABS does not make drinks automatically.</a></li>
+                <li><a href="#card8">ABS is showing POS cable error.</a></li>
+                <li><a href="#card10">ABS is stuck on <em>Initializing</em>.</a></li>
+                <li><a href="#card13">ABS is making drinks no longer needed.</a></li>
+                <li><a href="#card10">ABS is showing errors other than the POS cable.</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card2">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>ABS Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Great! You're good to go!</h3>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card1">Restart troubleshooting</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card3">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>ABS Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Contact your OTP for further troubleshooting.</h3>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card1">Restart troubleshooting</a></li>
+                <li><a href="tel:2566902564">Call your OTP.</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card4">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>ABS Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Contact your Supervisor to determine if Coke needs to be called.</h3>
+
+            <p><strong>Did this solve your issue?</strong></p>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card1">Restart troubleshooting.</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card5">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>ABS Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Reboot register 14.</h3>
+
+            <ol>
+                <li>Press the power button on register 14 and wait for it to completely shut down.</li>
+                <li>Press the power button again to bring the register back up.</li>
+            </ol>
+
+            <p><strong>Did this solve your issue?</strong></p>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card2">Yes</a></li>
+                <li><a href="#card6">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card6">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>ABS Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Power cycle the ABS.</h3>
+
+            <ol>
+                <li>The switch is on the left hand side behind the drink table.</li>
+                <li>Flip the switch to power it off.</li>
+                <li>Wait 10 seconds.</li>
+                <li>Flip the switch to power it back on.</li>
+            </ol>
+
+            <p><strong>NOTE:</strong> If the ABS starts making drinks no longer needed, do the following to clear drink
+                orders:</p>
+
+            <p><strong>Did this solve your issue?</strong></p>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card2">Yes</a></li>
+                <li><a href="#card7">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card7">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>ABS Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Which version of the ABS do you have?</h3>
+
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card8">Legacy ABS</a></li>
+                <li><a href="#card11">ABS 2.0</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card8">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>ABS Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Reboot the serial hub.</h3>
+
+            <ol>
+                <li>Locate the serial hub. It is a grey box with a green, circular section with
+                    <em><strong>N-Port</strong></em> in the middle of it.</li>
+                <li>Unplug the power and network cables.</li>
+                <li>Wait 10 seconds.</li>
+                <li>Plug the power and network cables back in.</li>
+            </ol>
+
+            <p><strong>Did this solve your issue?</strong></p>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card2">Yes</a></li>
+                <li><a href="#card9">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card9">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>ABS Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Reseat the ABS cable on the serial hub.</h3>
+
+            <ol>
+                <li>Locate the serial hub. It is a grey box with a green, circular section with
+                    <em><strong>N-Port</strong></em> in the middle of it.</li>
+                <li>Unplug the ABS serial cable in port 4.</li>
+                <li>Wait 10 seconds.</li>
+                <li>Plug the serial cable back into port 4.</li>
+            </ol>
+            
+            <p><strong>Did this solve your issue?</strong></p>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card2">Yes</a></li>
+                <li><a href="#card3">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card10">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>ABS Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Power cycle the ABS.</h3>
+
+            <ol>
+                <li>The switch is on the left hand side behind the drink table.</li>
+                <li>Flip the switch to power it off.</li>
+                <li>Wait 10 seconds.</li>
+                <li>Flip the switch to power it back on.</li>
+            </ol>
+
+            <p><strong>Did this solve your issue?</strong></p>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card2">Yes</a></li>
+                <li><a href="#card4">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card11">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>ABS Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Reseat the network cable.</h3>
+
+            <ol>
+                <li>The network cable is on the back of the machine</li>
+                <li>Unplug the network cable.</li>
+                <li>Wait 10 seconds.</li>
+                <li>Plug the network cable back in.</li>
+            </ol>
+
+            <p><strong>Did this solve your issue?</strong></p>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card2">Yes</a></li>
+                <li><a href="#card12">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card12">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>ABS Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Reboot the POS server VM.</h3>
+
+            <p>In the back office, change the KVM input to PC2 with one of the following methods:</p>
+
+            <ul>
+                <li>Press Scroll Lock twice &rarr; 2</li>
+                <li>Press Scroll Lock twice &rarr; wait for the menu to appear &rarr; Select input 2 and press Enter.
+                </li>
+                <li>Press the button on the switch to change the input to PC2.</li>
+            </ul>
+
+            <p>You should see the POS server virtual machine by default. If you see a green background with
+                <em>McDonald's
+                    Host Server Easy Access</em>, click <em>View Virtual Machines</em> to view the POS server. Click
+                <em>Shutdown VM</em> or <em>Shutdown OS</em>. Put the store in backup production by ringing up a water
+                on front counter and totaling out the order. A box asking to try again will pop up. Press "No." A second
+                box will pop up. Press "Yes." Watch the word "Standard" on a KVS screen. Once it switches from white to
+                red, you will be in backup. Go back to the office and click <em>Start
+                    VM</em>.</p>
+
+            <p>Once the POS server finishes loading all software, check the icons on the taskbar. There should be a Java
+                icon (looks like a coffee cup), and one that says <em>NP</em>. Click the Java icon and verify it says
+                <em>Working as Primary</em>, then hover your mouse over the NP icon and verify there are five boxes
+                showing
+                <strong style="color:red;">If there are less than five boxes or if the Java icon is not present, call
+                    your OTP!</strong></p>
+
+            <p>Promote the store to primary production by going to Manager &rarr; Support &rarr; Promote to Primary
+                Production. Either wait for the register to say "Production has been switched," or for "Standard" on a
+                KVS screen to switch from red to white.</p>
+
+            <p><strong>Did this solve your issue?</strong></p>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card2">Yes</a></li>
+                <li><a href="#card3">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card13">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>ABS Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Which version of the ABS do you have?</h3>
+
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card14">Legacy ABS</a></li>
+                <li><a href="#card15">ABS 2.0</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card14">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>ABS Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Clear the orders on the ABS.</h3>
+
+            <ol>
+                <li>Put the machine in manual mode.</li>
+                <li>Press the &darr; button.</li>
+                <li>The password is the first four flavors on the top row.</li>
+                <li>Press <em>Enter</em>.</li>
+                <li>Press the <em>Back/Clear</em> button until you return to manual mode.</li>
+                <li>Put the machine back in auto.</li>
+            </ol>
+
+            <p><strong>Did this solve your issue?</strong></p>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card2">Yes</a></li>
+                <li><a href="#card3">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card15">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>ABS Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Clear the orders on the ABS.</h3>
+
+            <ol>
+                <li>Tap on <em>Order Queue</em> on the left touch screen.</li>
+                <li>Clear the unneccessary drinks from the queue.</li>
+            </ol>
+
+            <p><strong>Did this solve your issue?</strong></p>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card2">Yes</a></li>
+                <li><a href="#card3">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+</body>
+
+</html>

@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Register Troubleshooting</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.6.4.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+</head>
+
+<body>
+
+    <div data-role="page" id="card1">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>Register Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>What symptoms are you experiencing?</h3>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card4">Register is offline.</a></li>
+                <li><a href="#card6">Register randomly shuts off.</a></li>
+                <li><a href="#card7">Screen not responding to touch.</a></li>
+                <li><a href="#card8">Single register unable to communicate with monitors.</a></li>
+                <li><a href="#card7">Register is frozen.</a></li>
+                <li><a href="#card7">Windows blue screen.</a></li>
+                <li><a href="#card13">Cash drawer shows open when closed.</a></li>
+                <li><a href="#card17">Cash drawer will not open automatically.</a></li>
+                <li><a href="#card7">Biometrics are not working.</a></li>
+                <li><a href="#card3">Register has a red border with an RFM error.</a></li>
+                <li><a href="#card3">Screen is damaged.</a></li>
+                <li><a href="#card3">Screen is flickering/glitching.</a></li>
+                <li><a href="#card3">None of the above</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card2">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>Register Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Great! You're good to go!</h3>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card1">Restart troubleshooting</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card3">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>Register Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Contact your OTP for further troubleshooting.</h3>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card1">Restart troubleshooting</a></li>
+                <li><a href="tel:2566902564">Call your OTP.</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card4">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>Register Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Is the register powered on?</h3>
+
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card8">Yes</a></li>
+                <li><a href="#card5">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card5">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>Register Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Power on the register.</h3>
+
+            <p>Press the power button on the register to power it on. On JS-960 models, the power button may be slightly
+                covered by plastic, so you may need a pen or something similar to press the button.</p>
+
+            <p><strong>Did this solve your issue?</strong></p>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card2">Yes</a></li>
+                <li><a href="#card6">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card6">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>Register Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Check the power cable.</h3>
+
+            <p>Make sure the power cable is properly seated on both the register and in the twist-lock outlet.</p>
+
+            <p>If you have JS-960s in your store:</p>
+
+            <ul>
+                <li>The power cable plugs into the bottom of the register.</li>
+                <li>Tilt the register and push the cable in as far as it will go.</li>
+            </ul>
+
+            <p>If you have JS-970s in your store:</p>
+
+            <ul>
+                <li>The power cable plugs into the brick behind the stand cover.</li>
+                <li>Tilt the screen until it's flat (parallel to the counter).</li>
+                <li>Reach under the register on the customer side and find two small tabs.</li>
+                <li>Pull those tabs to the outside of the register.</li>
+                <li>Pull the cover off the front of the register.</li>
+                <li>Push the power cable into the power brick as far as it will go.</li>
+                <li>Follow these steps in reverse to attach the cover.</li>
+            </ul>
+
+            <p><strong>Did this solve your issue?</strong></p>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card2">Yes</a></li>
+                <li><a href="#card3">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card7">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>Register Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Reboot the register.</h3>
+
+            <p>Press the power button on the register once to shut it down. On JS-960 models, the power button may be
+                slightly covered by plastic, so you may need a pen or something similar to press the button.
+                <strong>DO NOT</strong>
+                press and hold the power button unless there is no other option! This may cause data
+                corruption or damage to the unit!</p>
+
+            <p>Once the register shuts down, press the power button again to boot it back up.</p>
+
+            <p><strong>Did this solve your issue?</strong></p>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card2">Yes</a></li>
+                <li><a href="#card3">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card8">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>Register Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Reboot the register.</h3>
+
+            <p>Press the power button on the register once to shut it down. On JS-960 models, the power button may be
+                slightly covered by plastic, so you may need a pen or something similar to press the button.
+                <strong>DO NOT</strong>
+                press and hold the power button unless there is no other option! This may cause data
+                corruption or damage to the unit!</p>
+
+            <p>Once the register shuts down, press the power button again to boot it back up.</p>
+
+            <p><strong>Did this solve your issue?</strong></p>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card2">Yes</a></li>
+                <li><a href="#card9">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card9">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>Register Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Check the network cable on the register.</h3>
+
+            <p>The network cable is a yellow cable, and it should be connected to a port with two LEDs on it.</p>
+
+            <p><strong>Is the network cable connected to the correct port?</strong></p>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card10">Yes</a></li>
+                <li><a href="#card11">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card10">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>Register Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Check the network cable on the register.</h3>
+
+            <p><strong>Are the lights on the network port lit and/or flashing, and is the register functioning normally?</strong></p>
+
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card2">Yes</a></li>
+                <li><a href="#card3">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card11">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>Register Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Move the network cable to the correct port.</h3>
+
+            <p>The network cable may be incorrectly connected to a port labeled COM1 or COM2. Move the network cable to
+                the correct port.</p>
+
+            <p><strong>Did this solve your issue?</strong></p>
+
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card2">Yes</a></li>
+                <li><a href="#card10">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card12">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>Register Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Move the network cable to the correct port.</h3>
+
+            <p>The network cable may be incorrectly connected to a port labeled COM1 or COM2. Move the network cable to
+                the correct port.</p>
+
+            <p><strong>Did this solve your issue?</strong></p>
+
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card2">Yes</a></li>
+                <li><a href="#card10">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card13">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>Register Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Which register model is installed?</h3>
+
+            <p>Look on the bottom of the screen for the model number. If the model number is worn off, JS-960s are an
+                olive green with a thin display, and JS-970s are black with a thick display.</p>
+
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card18">JS-960</a></li>
+                <li><a href="#card14">JS-970</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card14">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>Register Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Check the cash drawer adapter cable.</h3>
+
+            <p>The cash drawer cable is a small cable with a phone line connector. Reseat the cable.</p>
+
+            <p><strong>Did this solve your issue?</strong></p>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card2">Yes</a></li>
+                <li><a href="#card15">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card15">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>Register Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Check the cash drawer cable.</h3>
+
+            <p>Trace the cable from the cash drawer to where it connects to the adapter. Reseat the cable.</p>
+
+            <p><strong>Did this solve your issue?</strong></p>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card2">Yes</a></li>
+                <li><a href="#card3">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card16">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>Register Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Will the drawer open with a key?</h3>
+
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card17">Yes</a></li>
+                <li><a href="#card3">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card17">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>Register Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Check the drawer for obstructions.</h3>
+
+            <p>Open the drawer and look for any physical obstructions. Remove any objects preventing the drawer from opening normally.</p>
+
+            <p><strong>Did this solve your issue?</strong></p>
+
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card2">Yes</a></li>
+                <li><a href="#card18">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card18">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>Register Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Reboot the register.</h3>
+
+            <p>Press the power button on the register once to shut it down. On JS-960 models, the power button may be
+                slightly covered by plastic, so you may need a pen or something similar to press the button.
+                <strong>DO NOT</strong>
+                press and hold the power button unless there is no other option! This may cause data
+                corruption or damage to the unit!</p>
+
+            <p>Once the register shuts down, press the power button again to boot it back up.</p>
+
+            <p><strong>Did this solve your issue?</strong></p>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card2">Yes</a></li>
+                <li><a href="#card19">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card19">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>Register Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Cycle the cash drawer mode.</h3>
+
+            <ol>
+                <li>Go to the <em><strong>Manager</strong></em> menu.</li>
+                <li>Select <em><strong>Manager Options</strong></em>.</li>
+                <li>Change the cash drawer mode from <em><strong>Normal</strong></em> to <em><strong>Forced</strong></em>.</li>
+                <li>Reboot the register.</li>
+                <li>Go back to the <em><strong>Manager</strong></em> menu.</li>
+                <li>Select <em><strong>Manager Options</strong></em>.</li>
+                <li>Change the cash drawer mode back to <em><strong>Normal</strong></em>.</li>
+                <li>Test the drawer by performing a manual drawer open or wait for the next cash transaction.</li>
+            </ol>
+
+            <p><strong>Did this solve your issue?</strong></p>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card2">Yes</a></li>
+                <li><a href="#card20">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card20">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>Register Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Reseat the cash drawer cable on the register</h3>
+
+            <ol>
+                <li>Look for the port labeled <em><strong>CD1</strong></em>.</li>
+                <li>Unplug the cable, wait 10 seconds, and plug it back in.</li>
+            </ol>
+
+            <p><strong>Did this solve your issue?</strong></p>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card2">Yes</a></li>
+                <li><a href="#card21">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card21">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>Register Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Reseat the cash drawer adapter on the cash drawer cable.</h3>
+
+            <p><strong>NOTE:</strong> If the drawer is connected to a JS-970, click <em><strong>No</strong></em> below.</p>
+
+            <ol>
+                <li>Trace the cash drawer cable from the register to the cash drawer.</li>
+                <li>Unplug the adapter, wait 10 seconds, and plug it back in.</li>
+            </ol>
+
+            <p><strong>Did this solve your issue?</strong></p>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card2">Yes</a></li>
+                <li><a href="#card3">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+</body>
+
+</html>

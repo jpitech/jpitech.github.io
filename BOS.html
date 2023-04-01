@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Back Office Server Troubleshooting</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.6.4.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+
+</head>
+
+<body>
+    <div data-role='page' id='card1'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+            <h1>Back Office Server Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>What symptoms are you experiencing?</h3>
+            <ul data-role='listview' data-inset='true'>
+                <li><a href='#card4'>Unable to log into server with eID.</a></li>
+                <li><a href='#card8'>Monitor is blank.</a></li>
+                <li><a href='#card12'>Monitor shows a different screen.</a></li>
+                <li><a href='#card3'>QsrCash & Inventory shows "Staging."</a></li>
+                <li><a href='#card13'>QsrCash & Inventory shows "Local Login."</a></li>
+                <li><a href='#card14'>Windows blue screen error.</a></li>
+                <li><a href='#card15'>Thermal error preventing boot.</a></li>
+                <li><a href='#card16'>Unable to run POS close.</a></li>
+                <li><a href='#card21'>Unable to run POS open.</a></li>
+                <li><a href='#card26'>Drawer counts not showing for current day.</a></li>
+                <li><a href='#card34'>Start Business Day shows previous date is closed.</a></li>
+                <li><a href='#card3'>None of the above</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role='page' id='card2'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+
+            <h1>Back Office Server Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>Great! You're good to go!</h3>
+            <ul data-role='listview' data-inset='true'>
+                <li><a href="#card1">Restart troubleshooting</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role='page' id='card3'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+
+            <h1>Back Office Server Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>Contact your OTP for further troubleshooting.</h3>
+            <ul data-role='listview' data-inset='true'>
+                <li><a href="#card1">Restart troubleshooting</a></li>
+                <li><a href="tel:2566902564">Call your OTP.</a>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role='page' id='card4'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+            <h1>Back Office Server Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>Log in with the Field Engineer login.</h3>
+
+            <p>The field engineer login is built into the back office server. You <strong>do not</strong> need to
+                include "narest\" in front of the username to log in.</p>
+
+            <ul>
+                <li>Username: fe501</li>
+                <li>Password: ,xgenele</li>
+            </ul>
+
+            <p><strong>Were you able to log into the BOS?</strong></p>
+
+            <ul data-role='listview' data-inset='true'>
+                <li><a href="#card5">Yes</a></li>
+                <li><a href="#card3">No</a>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role='page' id='card5'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+            <h1>Back Office Server Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>Reboot the BOS and retry your eID login.</h3>
+
+            <p>Once you have logged in with the field engineer login, click the Restart button on the start screen. Once
+                the server reaches the login screen again, try to log in with your eID again.</p>
+
+            <p><strong>>Were you able to log in with your eID?</strong></p>
+
+            <ul data-role='listview' data-inset='true'>
+                <li><a href="#card2">Yes</a></li>
+                <li><a href="#card6">No</a>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role='page' id='card6'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+            <h1>Back Office Server Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>Log in with the field engineer login and verify connectivity.</h3>
+
+            <p>Use the field engineer login to access the BOS. Open QsrCash & Inventory.</p>
+
+            <p><strong>Does the application ask for a local login, or does the normal eID login page appear?</strong>
+            </p>
+            <ul data-role='listview' data-inset='true'>
+                <li><a href='#card3'>Local login.</a></li>
+                <li><a href='#card7'>Normal login.</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role='page' id='card7'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+            <h1>Back Office Server Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>Continue to use the field engineer login and contact your OTP.</h3>
+
+            <p>There may be an issue with the user records on the BOS. Use the field engineer login and contact your OTP
+                so he may correct the issue.</p>
+
+            <ul data-role='listview' data-inset='true'>
+                <li><a href='#card1'>Restart troubleshooting.</a></li>
+                <li><a href='tel:2566902564'>Contact your OTP.</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role='page' id='card8'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+            <h1>Back Office Server Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>What color is the light on the monitor?</h3>
+
+            <ul data-role='listview' data-inset='true'>
+                <li><a href='#card9'>Orange</a></li>
+                <li><a href='#card11'>No light</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role='page' id='card9'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+            <h1>Back Office Server Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>Move the mouse or strike a key on the keyboard to wake the computer.</h3>
+
+            <p>The BOS is configured to turn off the display after a certain period of inactivity. Sending an input
+                signal from the mouse or keyboard will wake the computer and turn on the display.</p>
+
+            <p><strong>Did this solve your issue?</strong></p>
+            <ul data-role='listview' data-inset='true'>
+                <li><a href='#card2'>Yes</a></li>
+                <li><a href='#card10'>No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role='page' id='card10'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+            <h1>Back Office Server Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>Verify the KVM switch is set for the correct input.</h3>
+
+            <p>Make sure the KVM switch is set to PC1. Depending on the model of KVM switch, you have one of three
+                options to select the input:</p>
+
+            <ul>
+                <li>Scroll Lock &rarr; Scroll Lock &rarr; 1</li>
+                <li>Scroll Lock &rarr; Scroll Lock &rarr; Wait for a box. &rarr; Select the input and press Enter</li>
+                <li>Press the input button on the switch until PC1 is lit.</li>
+            </ul>
+
+            <p><strong>Did this solve your issue?</strong></p>
+
+            <ul data-role='listview' data-inset='true'>
+                <li><a href='#card2'>Yes</a></li>
+                <li><a href='#card3'>No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role='page' id='card11'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+            <h1>Back Office Server Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>Verify the monitor has power.</h3>
+
+            <p>Check the cables on the back of the monitor to make sure the power cable is connected properly. Reseat
+                the power cable if necessary and press the power button.</p>
+
+            <p><strong>Did this solve your issue?</strong></p>
+
+            <ul data-role='listview' data-inset='true'>
+                <li><a href='#card2'>Yes</a></li>
+                <li><a href='#card3'>No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role='page' id='card12'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+            <h1>Back Office Server Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>Change the KVM switch input.</h3>
+
+            <p>Make sure the KVM switch is set to PC1. Depending on the model of KVM switch, you have one of three
+                options to select the input:</p>
+
+            <ul>
+                <li>Scroll Lock &rarr; Scroll Lock &rarr; 1</li>
+                <li>Scroll Lock &rarr; Scroll Lock &rarr; Wait for a box. &rarr; Select the input and press Enter</li>
+                <li>Press the input button on the switch until PC1 is lit.</li>
+            </ul>
+
+            <p><strong>Did this solve your issue?</strong></p>
+
+            <ul data-role='listview' data-inset='true'>
+                <li><a href='#card2'>Yes</a></li>
+                <li><a href='#card3'>No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role='page' id='card13'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+            <h1>Back Office Server Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>Reboot the BOS and retry the login.</h3>
+
+            <p>Click <em>Restart</em> from the Start screen to reboot the BOS. <strong>DO NOT press and hold the power
+                    button
+                    to shut it down! This method may cause data corruption!</strong> Once the BOS boots up, log into the
+                server, and open QsrCash & Inventory.</p>
+
+            <p><strong>Is the regular login screen showing?</strong></p>
+
+            <ul data-role='listview' data-inset='true'>
+                <li><a href='#card2'>Yes</a></li>
+                <li><a href='#card3'>No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role='page' id='card14'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+            <h1>Back Office Server Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>Reboot the BOS.</h3>
+
+            <p>Since a blue screen error prevents the BOS from being used, press the power button to shut down the
+                server. Press it again to boot it back up. Log in and attempt to use the server. Monitor the server
+                activity to verify the blue screen error does not occur again.</p>
+
+            <p><strong>Has the blue screen error occurred after the reboot?</strong></p>
+
+            <ul data-role='listview' data-inset='true'>
+                <li><a href='#card3'>Yes</a></li>
+                <li><a href='#card2'>No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role='page' id='card15'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+            <h1>Back Office Server Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>Reboot the BOS.</h3>
+
+            <p>Press the power button to turn off the BOS and turn it back on.</p>
+
+            <p><strong>Did the BOS boot normally?</strong></p>
+
+            <ul data-role='listview' data-inset='true'>
+                <li><a href='#card2'>Yes</a></li>
+                <li><a href='#card3'>No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role='page' id='card16'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+            <h1>Back Office Server Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>Did the POS close process throw any register errors?</h3>
+
+            <ul data-role='listview' data-inset='true'>
+                <li><a href='#card17'>Yes</a></li>
+                <li><a href='#card18'>No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role='page' id='card17'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+            <h1>Back Office Server Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>Reboot the affected register.</h3>
+
+            <p>Press the power button once and allow the device to shut down. Press it again to reboot the register.</p>
+
+            <p>If the register listed is a kiosk, get the key and open the kiosk door to reboot. The power button is on
+                the bottom left of the yellow enclosure of Zivelo kiosks (button and latch printer doors). Diebold
+                kiosks (magnetic printer doors) have a rocker switch for power.</p>
+
+            <p>Once the register/kiosk comes back up, retry the POS close.</p>
+
+            <p><strong>Did the POS close proceed normally?</strong></p>
+
+            <ul data-role='listview' data-inset='true'>
+                <li><a href='#card2'>Yes</a></li>
+                <li><a href='#card18'>No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role='page' id='card18'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+            <h1>Back Office Server Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>Close QsrCash & Inventory and retry the POS close.</h3>
+
+            <p>Sometimes the close processes can freeze when communicating with the POS. Log out of and close the QsrC&I
+                application, log back in, and retry the POS close.</p>
+
+            <p><strong>Did the close proceed normally?</strong></p>
+
+            <ul data-role='listview' data-inset='true'>
+                <li><a href='#card2'>Yes</a></li>
+                <li><a href='#card19'>No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role='page' id='card19'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+            <h1>Back Office Server Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>Reboot the BOS.</h3>
+
+            <p>Access the Start screen by either moving the mouse to the bottom left corner of the screen and clicking
+                start or by pressing the Windows key on the keyboard. Click <em>Restart.</em> Retry the close when the
+                server comes back up.</p>
+
+            <p><strong>Did the close proceed normally?</strong></p>
+
+            <ul data-role='listview' data-inset='true'>
+                <li><a href='#card2'>Yes</a></li>
+                <li><a href='#card20'>No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role='page' id='card20'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+            <h1>Back Office Server Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>Reboot the POS server.</h3>
+
+            <p><strong style="color:red;">WARNING! Troubleshooting steps listed below may have serious repercussions if
+                    not followed exactly! If you are not sure of what to do, contact your OTP!</strong></p>
+
+            <p>Change the KVM input to PC2 with one of the following methods:</p>
+
+            <ul>
+                <li>Press Scroll Lock twice &rarr; 2</li>
+                <li>Press Scroll Lock twice &rarr; wait for the menu to appear &rarr; Select input 2 and press Enter.
+                </li>
+                <li>Press the button on the switch to change the input to PC2.</li>
+            </ul>
+
+            <p>You should see the POS server virtual machine by default. If you see a green background with
+                <em>McDonald's
+                    Host Server Easy Access</em>, click <em>View Virtual Machines</em> to view the POS server. Click
+                <em>Shutdown VM</em> or <em>Shutdown OS</em>, wait for the machine to shut down, and click <em>Start
+                    VM</em>.</p>
+
+            <p>Once the POS server finishes loading all software, check the icons on the taskbar. There should be a Java
+                icon (looks like a coffee cup), and one that says <em>NP</em>. Click the Java icon and verify it says
+                <em>Working as Primary</em>, then hover your mouse over the NP icon and verify there are five boxes
+                showing
+                <strong style="color:red;">If there are less than five boxes or if the Java icon is not present, call
+                    your OTP!</strong></p>
+
+            <p>Once the POS server is finished booting, and you have verified it is running normally, switch back to the
+                input 1 on the KVM switch with once of the methods above, log into QsrC&I, and retry the close.</p>
+
+            <p><strong>Did the close proceed normally?</strong></p>
+
+            <ul data-role='listview' data-inset='true'>
+                <li><a href='#card2'>Yes</a></li>
+                <li><a href='#card3'>No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role='page' id='card21'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+            <h1>Back Office Server Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>Did the POS open process throw any register errors?</h3>
+
+            <ul data-role='listview' data-inset='true'>
+                <li><a href='#card22'>Yes</a></li>
+                <li><a href='#card23'>No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role='page' id='card22'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+            <h1>Back Office Server Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>Reboot the affected register.</h3>
+
+            <p>Press the power button once and allow the device to shut down. Press it again to reboot the register.</p>
+
+            <p>If the register listed is a kiosk, get the key and open the kiosk door to reboot. The power button is on
+                the bottom left of the yellow enclosure of Zivelo kiosks (button and latch printer doors). Diebold
+                kiosks (magnetic printer doors) have a rocker switch for power.</p>
+
+            <p>Once the register/kiosk comes back up, retry the POS close.</p>
+
+            <p><strong>Did the POS open proceed normally?</strong></p>
+
+            <ul data-role='listview' data-inset='true'>
+                <li><a href='#card2'>Yes</a></li>
+                <li><a href='#card23'>No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role='page' id='card23'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+            <h1>Back Office Server Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>Close QsrCash & Inventory and retry the POS open.</h3>
+
+            <p>Sometimes the close processes can freeze when communicating with the POS. Log out of and close the QsrC&I
+                application, log back in, and retry the POS close.</p>
+
+            <p><strong>Did the open proceed normally?</strong></p>
+
+            <ul data-role='listview' data-inset='true'>
+                <li><a href='#card2'>Yes</a></li>
+                <li><a href='#card24'>No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role='page' id='card24'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+            <h1>Back Office Server Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>Reboot the BOS.</h3>
+
+            <p>Access the Start screen by either moving the mouse to the bottom left corner of the screen and clicking
+                start or by pressing the Windows key on the keyboard. Click <em>Restart.</em> Retry the close when the
+                server comes back up.</p>
+
+            <p><strong>Did the open proceed normally?</strong></p>
+
+            <ul data-role='listview' data-inset='true'>
+                <li><a href='#card2'>Yes</a></li>
+                <li><a href='#card25'>No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role='page' id='card25'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+            <h1>Back Office Server Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>Reboot the POS server.</h3>
+
+            <p><strong style="color:red;">WARNING! Troubleshooting steps listed below may have serious repercussions if
+                    not followed exactly! If you are not sure of what to do, contact your OTP!</strong></p>
+
+            <p>Change the KVM input to PC2 with one of the following methods:</p>
+
+            <ul>
+                <li>Press Scroll Lock twice &rarr; 2</li>
+                <li>Press Scroll Lock twice &rarr; wait for the menu to appear &rarr; Select input 2 and press Enter.
+                </li>
+                <li>Press the button on the switch to change the input to PC2.</li>
+            </ul>
+
+            <p>You should see the POS server virtual machine by default. If you see a green background with
+                <em>McDonald's
+                    Host Server Easy Access</em>, click <em>View Virtual Machines</em> to view the POS server. Click
+                <em>Shutdown VM</em> or <em>Shutdown OS</em>, wait for the machine to shut down, and click <em>Start
+                    VM</em>.</p>
+
+            <p>Once the POS server finishes loading all software, check the icons on the taskbar. There should be a Java
+                icon (looks like a coffee cup), and one that says <em>NP</em>. Click the Java icon and verify it says
+                <em>Working as Primary</em>, then hover your mouse over the NP icon and verify there are five boxes
+                showing
+                <strong style="color:red;">If there are less than five boxes or if the Java icon is not present, call
+                    your OTP!</strong></p>
+
+            <p>Once the POS server is finished booting, and you have verified it is running normally, switch back to the
+                input 1 on the KVM switch with once of the methods above, log into QsrC&I, and retry the open.</p>
+
+            <p><strong>Did the open proceed normally?</strong></p>
+
+            <ul data-role='listview' data-inset='true'>
+                <li><a href='#card2'>Yes</a></li>
+                <li><a href='#card3'>No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role='page' id='card26'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+            <h1>Back Office Server Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>Verify the current Business Date.</h3>
+
+            <p>In the CIT application, verify the store is open for the correct business date. Check under POS
+                Open/Close.</p>
+
+            <p><strong>Is the store open for the correct business date?</strong></p>
+
+            <ul data-role='listview' data-inset='true'>
+                <li><a href='#card27'>Yes</a></li>
+                <li><a href='#card3'>No</a></li>
+                </u>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role='page' id='card27'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+            <h1>Back Office Server Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>Verify Start Business Day has been run for the current business date.</h3>
+
+            <p>In the CIT application, verify Start Business Day is completed for the current business date.</p>
+
+            <p><strong>Has Start Business Day been run for the current business date?</strong></p>
+
+            <ul data-role='listview' data-inset='true'>
+                <li><a href='#card28'>Yes</a></li>
+                <li><a href='#card33'>No, or unable to run Start Business Date.</a></li>
+                </u>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role='page' id='card28'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+            <h1>Back Office Server Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>Log out of the CIT application and log back in.</h3>
+
+            <p>In the CIT application, log out of the application, close the window, re-open the application, and log
+                back in.</p>
+
+            <p><strong>Did the missing drawers show under Drawer Counts?</strong></p>
+
+            <ul data-role='listview' data-inset='true'>
+                <li><a href='#card2'>Yes</a></li>
+                <li><a href='#card29'>No</a></li>
+                </u>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role='page' id='card29'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+            <h1>Back Office Server Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>Reboot the affected registers.</h3>
+
+            <p>Reboot each register with a missing drawer change by pressing the power button, letting the system shut
+                down, and pressing the power button again to boot the system back up.</p>
+
+            <p style="color: red; font-weight: 700;">DO NOT press and hold the power button to shut it down as it may
+                result in data loss or hardware failure.</p>
+
+            <p><strong>Did the missing drawers show under Drawer Counts?</strong></p>
+
+            <ul data-role='listview' data-inset='true'>
+                <li><a href='#card2'>Yes</a></li>
+                <li><a href='#card30'>No</a></li>
+                </u>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role='page' id='card30'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+            <h1>Back Office Server Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>Reboot the back office server.</h3>
+
+            <p>Reboot the back office server by pressing the Windows key on the keyboard and clicking the yellow Restart
+                icon on the Start screen. Rebooting the back office server takes between 5-10 minutes.</p>
+
+            <p style="color: red; font-weight: 700;">DO NOT press and hold the power button to shut it down as it may
+                result in data loss or hardware failure.</p>
+
+            <p><strong>Did the missing drawers show under Drawer Counts?</strong></p>
+
+            <ul data-role='listview' data-inset='true'>
+                <li><a href='#card2'>Yes</a></li>
+                <li><a href='#card31'>No</a></li>
+                </u>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role='page' id='card31'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+            <h1>Back Office Server Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>Reboot the POS server.</h3>
+
+            <p><strong style="color:red;">WARNING! Troubleshooting steps listed below may have serious repercussions if
+                not followed exactly! If you are not sure of what to do, contact your OTP!</strong></p>
+
+            <ol>
+                <li>In the back office, change the KVM input to PC2 with one of the following methods:
+                    <ul>
+                        <li>Press Scroll Lock twice &rarr; 2</li>
+                        <li>Press Scroll Lock twice &rarr; wait for the menu to appear &rarr; Select input 2 and press
+                            Enter.
+                        </li>
+                        <li>Press the button on the switch to change the input to PC2.</li>
+                    </ul>
+                </li>
+                <li>You should see the POS server virtual machine by default.
+                    <ul>
+                        <li>If you see a green background with <em>McDonald's Host Server Easy Access</em>, click
+                            <em>View Virtual Machines</em> to view the POS server.</li>
+                    </ul>
+                </li>
+                <li>Click <em>Shutdown VM</em> or <em>Shutdown OS</em>.</li>
+                <li>If your store is on SP10, close the window and click <em>Restart</em> to reboot the host server.
+                </li>
+                <li>Put the store in backup production.
+                    <ol>
+                        <li>Go to a front counter register.</li>
+                        <li>Ring up a water and total out the order.</li>
+                        <li>"<em>Unable to communicate with the monitors</em>" should pop up.</li>
+                        <li>Tap <em>No.</em></li>
+                        <li>Tap <em>Yes</em> when asked to switch to backup.</li>
+                        <li>Watch the text on the bottom of your KVS monitors. Once <em>Standard</em> switches to red,
+                            the store is in backup production.</li>
+                        <li><strong>NOTE:</strong> If your store is on SP10, the store may switch to backup production
+                            automatically.</li>
+                    </ol>
+                </li>
+                <li>Click <em>Start VM</em> on the POS server, and wait for the software to fully load.</li>
+                <li>Check the icons on the bottom of the screen. There should be an icon that looks like the pound sign
+                    (#).
+                <li>Hover your mouse over the <strong>#</strong> icon and verify there are five boxes showing.
+                </li>
+                <li>If everything is running correctly, switch the store to primary production.
+                    <ol>
+                        <li>Go to any register.</li>
+                        <li>Go to <em>Manager</em> &rarr; <em>Support</em>.</li>
+                        <li>Tap <em>Promote to Primary Production</em>.
+                            <ul>
+                                <li><strong>NOTE:</strong> The switch from backup to primary is
+                                    <em><strong>not</strong></em> instant! Only press the button once!</li>
+                            </ul>
+                        </li>
+                        <li>Watch the text at the bottom of your KVS monitors. Once <em>Standard</em> switches from red
+                            to white, the store will be back in primary</li>
+                    </ol>
+                </li>
+            </ol>
+
+            <p>After rebooting the POS server, go back to the back office server by switching to PC1 with the same
+                method you used above.</p>
+
+            <p><strong>Did the missing drawers show under Drawer Counts?</strong></p>
+
+            <ul data-role='listview' data-inset='true'>
+                <li><a href='#card2'>Yes</a></li>
+                <li><a href='#card3'>No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role='page' id='card33'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+            <h1>Back Office Server Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>Run Start Business Day.</h3>
+
+            <p>In CIT, run Start Business Day as you normally would during the opening process.</p>
+
+            <p><strong>Were you able to run Start Business Day, and did the missing drawers show up?</strong></p>
+
+            <ul data-role='listview' data-inset='true'>
+                <li><a href='#card2'>Yes</a></li>
+                <li><a href='#card34'>No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role='page' id='card34'>
+        <div data-role='header'>
+            <a href='#card1' data-icon='home' data-iconpos='notext'>Home</a>
+            <h1>Back Office Server Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role='content'>
+            <h3>Reboot both the back office and POS servers, and attempt to run Start Business Day again.</h3>
+
+            <p><strong style="color:red;">WARNING! Troubleshooting steps listed below may have serious repercussions if
+                not followed exactly! If you are not sure of what to do, contact your OTP!</strong></p>
+
+            <p>Reboot the back office server by pressing the Windows key on the keyboard and clicking the yellow Restart
+                icon on the Start screen. Rebooting the back office server takes between 5-10 minutes.</p>
+
+            <p>Follow the instructions below to reboot the POS server:</p>
+
+            <ol>
+                <li>In the back office, change the KVM input to PC2 with one of the following methods:
+                    <ul>
+                        <li>Press Scroll Lock twice &rarr; 2</li>
+                        <li>Press Scroll Lock twice &rarr; wait for the menu to appear &rarr; Select input 2 and press
+                            Enter.
+                        </li>
+                        <li>Press the button on the switch to change the input to PC2.</li>
+                    </ul>
+                </li>
+                <li>You should see the POS server virtual machine by default.
+                    <ul>
+                        <li>If you see a green background with <em>McDonald's Host Server Easy Access</em>, click
+                            <em>View Virtual Machines</em> to view the POS server.</li>
+                    </ul>
+                </li>
+                <li>Click <em>Shutdown VM</em> or <em>Shutdown OS</em>.</li>
+                <li>If your store is on SP10, close the window and click <em>Restart</em> to reboot the host server.
+                </li>
+                <li>Put the store in backup production.
+                    <ol>
+                        <li>Go to a front counter register.</li>
+                        <li>Ring up a water and total out the order.</li>
+                        <li>"<em>Unable to communicate with the monitors</em>" should pop up.</li>
+                        <li>Tap <em>No.</em></li>
+                        <li>Tap <em>Yes</em> when asked to switch to backup.</li>
+                        <li>Watch the text on the bottom of your KVS monitors. Once <em>Standard</em> switches to red,
+                            the store is in backup production.</li>
+                        <li><strong>NOTE:</strong> If your store is on SP10, the store may switch to backup production
+                            automatically.</li>
+                    </ol>
+                </li>
+                <li>Click <em>Start VM</em> on the POS server, and wait for the software to fully load.</li>
+                <li>Check the icons on the bottom of the screen. There should be an icon that looks like the pound sign
+                    (#).
+                <li>Hover your mouse over the <strong>#</strong> icon and verify there are five boxes showing.
+                </li>
+                <li>If everything is running correctly, switch the store to primary production.
+                    <ol>
+                        <li>Go to any register.</li>
+                        <li>Go to <em>Manager</em> &rarr; <em>Support</em>.</li>
+                        <li>Tap <em>Promote to Primary Production</em>.
+                            <ul>
+                                <li><strong>NOTE:</strong> The switch from backup to primary is
+                                    <em><strong>not</strong></em> instant! Only press the button once!</li>
+                            </ul>
+                        </li>
+                        <li>Watch the text at the bottom of your KVS monitors. Once <em>Standard</em> switches from red
+                            to white, the store will be back in primary</li>
+                    </ol>
+                </li>
+            </ol>
+
+            <p>After rebooting the POS server, go back to the back office server by switching to PC1 with the same
+                method you used above.</p>
+
+            <p><strong>Were you able to run Start Business Day?</strong></p>
+
+            <ul data-role='listview' data-inset='true'>
+                <li><a href='#card2'>Yes</a></li>
+                <li><a href='#card3'>No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+</body>
+
+</html>
+
+</html>

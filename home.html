@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+    <title>JPI Technology Troubleshooting</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Audiowide&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img class="jpi" src="logo-new-resized.png" alt="Johnson Partners, Inc.">
+            <h1>Restaurant Technology Department</h1>
+        </div>
+
+        <div class="doc">
+            <div class="nav">
+                <div class="nav-section" id="general">
+                    <h2 class="nav-head">General Links</h2>
+                    <ul>
+                        <li class="nav-link"><a href="https://www.johnsonpartners.net">Johnson Partners Home Page</a></li>
+                        <li class="nav-link"><a href="https://otp.mcd.com">OTP Portal</a></li>
+                    </ul>
+                </div>
+                <div class="nav-section" id="overviews">
+                    <h2 class="nav-head">Hardware Overviews</h2>
+                    <ul>
+                        <li class="nav-link"><a href="#registers">Registers</a></li>
+                        <li class="nav-link"><a href="#kiosks">Kiosks</a></li>
+                        <li class="nav-link"><a href="#peds">Card Readers</a></li>
+                        <li class="nav-link"><a href="#kvs">Kitchen Video System</a></li>
+                        <li class="nav-link"><a href="#office">Back Office</a></li>
+                        <li class="nav-link"><a href="#dmbs">Menu Boards</a></li>
+                    </ul>
+                </div>
+                <div class="nav-section" id="troubleshooting">
+                    <h2 class="nav-head">Troubleshooting</h2>
+                    <ul>
+                        <li class="nav-link"><a href="reboot.html">Server Reboot Instructions</a></li>
+                        <li class="nav-link"><a href="BOS.html">Back Office Server</a></li>
+                        <li class="nav-link"><a href="POS.html">POS Server/Production</a></li>
+                        <li class="nav-link"><a href="Registers.html">Registers</a></li>
+                        <li class="nav-link"><a href="Kiosks.html">Kiosks</a></li>
+                        <li class="nav-link"><a href="KVS.html">KVS Controllers</a></li>
+                        <li class="nav-link"><a href="Clock.html">eSmartClock</a></li>
+                        <li class="nav-link"><a href="PED.html">Card Readers</a></li>
+                        <li class="nav-link"><a href="Printer.html">Printers</a></li>
+                        <li class="nav-link"><a href="Office_Printer.html">Back Office Printer</a></li>
+                        <li class="nav-link"><a href="DP.html">Dual Point</a></li>
+                        <li class="nav-link"><a href="DMB.html">Menu Boards</a></li>
+                        <li class="nav-link"><a href="Biometrics.html">Fingerprint Readers</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="main">
+                <div class="main-section">
+                    <h2 id="top">Welcome!</h2>
+
+                    <p>Welcome to the Johnson Partners, Inc. Technology Department page! Here you will find short
+                        overviews of hardware in your restaurant, as well as interactive troubleshooters in the
+                        navigation bar to the left. Please note the overviews are not visible on mobile devices and can
+                        only be seen on a desktop or laptop computer. If you have any questions about our technology or
+                        have any issues to report, please <a class="contact"
+                            href="https://docs.google.com/forms/d/1L276Kk92W4a8b4fnmkzT5vTlXLsXBAu3yZRhM0TNyjA/viewform?edit_requested=true">submit
+                            a ticket on the OTP form</a>, or contact our OTP3 <a class="contact" href="#contact">via the
+                            links
+                            below.</a></p>
+                </div>
+
+                <div class="main-section">
+                    <h2>Hardware Overviews</h2>
+
+                    <h3 id="registers">Registers</h3>
+
+                    <p>Our restaurants have two main models of registers: the Panasonic JS-960 and JS-970. Most stores
+                        are strictly one or the other, but there are a few occasions where both models are found in a
+                        single store.</p>
+                    <p>Dual lane restaurants should have at least six (6) registers deployed, and single lane
+                        restaurants should have at least five (5) registers deployed. Below you will find a description
+                        of each
+                        register's function:</p>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Device</th>
+                                <th>Function</th>
+                            </tr>
+                        </thead>
+                        <tr>
+                        <tr>
+                            <td>Register 1</td>
+                            <td>Front counter order taker. Backup production to POS server.</td>
+                        </tr>
+                        <tr>
+                            <td>Register 2</td>
+                            <td>Front counter order taker.</td>
+                        </tr>
+                        <tr>
+                            <td>Register 3 (if installed)</td>
+                            <td>Front counter order taker.</td>
+                        </tr>
+                        <tr>
+                            <td>Register 12</td>
+                            <td>Drive thru order taker. Controls order output to ICOD in lane 1</td>
+                        </tr>
+                        <tr>
+                            <td>Register 13</td>
+                            <td>Back drive thru cashier.</td>
+                        </tr>
+                        <tr>
+                            <td>Register 14</td>
+                            <td>Drive thru order taker. Controls order output to ICOD in lane 2. Controls drink
+                                orders
+                                sent to ABS.</td>
+                        </tr>
+                        <tr>
+                            <td>Register 15 (if installed)</td>
+                            <td>Drive thru order taker.</td>
+                        </tr>
+                        </tr>
+                    </table>
+
+                    <p>Please note Register 1 is very important due to its secondary function. Register 1 serves as
+                        backup production to the POS server. Should the server go down, Register 1 would need to be up
+                        and running to serve as the failover system. If there are any issues with Register 1, it is
+                        imperative they be resolved as soon as possible.</p>
+
+                    <a class="btt" href="#top">Back to Top</a>
+
+                    <h3 id="kiosks">Kiosks</h3>
+
+                    <p>Across our 22 restaurants, 18 locations have self-order kiosks installed in the dining room.
+                        These kiosks give our customers the option to place their orders themselves and pay at the kiosk
+                        without going to the front counter. Depending on the volume, one location could have two
+                        double-sided kiosks, one double-sided kiosk, or a double-sided and single-sided kiosk.</p>
+
+                    <p>We have two different models of kiosks in our restaurants: Zivelo and Diebold. You can identify
+                        the kiosk models by how you open the printer access door. Zivelo kiosks use a push-button and
+                        lever system, whereas the Diebold kiosks use a magnet to open the door. Both require a key to
+                        open the kiosk to access the controller.</p>
+
+                    <a class="btt" href="#top">Back to Top</a>
+
+                    <h3 id="peds">Card Readers</h3>
+
+                    <p>In compliance with the Cashless 3.0 standard, all of our restaurants use Verifone MX915 Payment
+                        Entry Devices (PEDs). These card readers allow for cashless payment via card swipe, chip cards,
+                        and mobile payment via Samsung Pay, Apple Pay, Google Pay, or other NFC payment method.</p>
+
+                    <p>There should be one card reader for each register taking payments. At a minimum, there should be
+                        three (3) card readers, but some stores could have as many of seven (7) deployed.</p>
+
+                    <a class="btt" href="#top">Back to Top</a>
+
+                    <h3 id="kvs">Kitchen Video System</h3>
+
+                    <p>All of our restaurants use a video system for both production and service areas. This video
+                        system is controlled by an array of thin client computers, either Dell Wyse or HP T630.
+                        Typically a store has one or the other, but there are some cases of mixed setups.</p>
+
+                    <p>For CBB stores, there are five (5) KVS controllers. For BDAP stores, there are seven (7) controllers. Below is a
+                        list of each KVS controller, where it's located and what functions it performs:</p>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Device</th>
+                                <th>Location</th>
+                                <th>Function</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>KVS 1</td>
+                                <td>Behind side 1 lunch monitor</td>
+                                <td>Controls lunch monitors, side 1 printers, and lunch bump bars</td>
+                            </tr>
+                            <tr>
+                                <td>KVS 2</td>
+                                <td>Behind either side 2 breakfast monitor or DT expo monitor</td>
+                                <td>Controls breakfast monitors, side 2 printers and breakfast bump bars</td>
+                            </tr>
+                            <tr>
+                                <td>KVS 3</td>
+                                <td>Behind FC expo monitor</td>
+                                <td>Controls FC and DT expo monitors, bump bars, and Dual Point printer (if installed)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>KVS 4</td>
+                                <td>Behind DT expo monitor (BDAP). Mounted on valance wall in DT present (CBB).</td>
+                                <td>Controls DT present monitor(s) and CBB monitor (if installed).</td>
+                            </tr>
+                            <tr>
+                                <td>KVS 5</td>
+                                <td>Hot Off The Grill (HOTG)</td>
+                                <td>Controls HOTG monitor and bump bar</td>
+                            </tr>
+                            <tr>
+                                <td>KVS 6 (BDAP)</td>
+                                <td>Behind one BDAP monitor</td>
+                                <td>Controls single BDAP monitor, bump bar, and both BDAP printers</td>
+                            </tr>
+                            <tr>
+                                <td>KVS 7 (BDAP)</td>
+                                <td>Behind one BDAP monitor</td>
+                                <td>Controls single BDAP monitor and bump bar</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <a class="btt" href="#top">Back to Top</a>
+
+                    <h3 id="office">Back Office</h3>
+
+                    <p>The back office houses the bulk of our systems that control everything in the restaurant.</p>
+
+                    <p>The Back Office Server (BOS) is the main computer used in the back office. This server allows
+                        access to CIT functions and limited Internet access to McDonald's approved websites.</p>
+
+                    <p>The POS Server is the main hub for our POS functions. It is the primary production node for
+                        routing orders from the registers to the KVS controllers.</p>
+
+                    <p>Each location has a closed-circuit surveillance system to monitor our restaurant 24/7 and has a
+                        dedicated monitor to allow for viewing live feeds and recorded playback. All CCTV footage is
+                        stored on a digital video recorder (DVR) or network video recorder (NVR).</p>
+
+                    <p>Each location also has a dedicated email system to allow complete Internet access. Since the
+                        Internet access on the BOS is limited to the McDonald's approved whitelist, this computer allows
+                        managers to access their Gmail accounts as well as all other websites and tools owned and
+                        maintained by Johnson Partners, Inc.</p>
+
+                    <p>These four computers are all connected by a KVM switch. To access each system, you can either
+                        press the appropriate input key on the KVM switch or use the appropriate hotkeys on the keyboard
+                        listed below:</p>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Device</th>
+                                <th>Input</th>
+                                <th>Hotkey</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Back Office Server</td>
+                                <td>PC1</td>
+                                <td>Scroll Lock &rarr; Scroll Lock &rarr; 1</td>
+                            </tr>
+                            <tr>
+                                <td>POS Server</td>
+                                <td>PC2</td>
+                                <td>Scroll Lock &rarr; Scroll Lock &rarr; 2</td>
+                            </tr>
+                            <tr>
+                                <td>Camera System</td>
+                                <td>PC3</td>
+                                <td>Scroll Lock &rarr; Scroll Lock &rarr; 3</td>
+                            </tr>
+                            <tr>
+                                <td>E-mail System</td>
+                                <td>PC4</td>
+                                <td>Scroll Lock &rarr; Scroll Lock &rarr; 4</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h3 id="dmbs">Digital Menu Boards</h3>
+
+                    <p>All restaurants have both Indoor Digital Menu Boards (IDMBs) and Outdoor Digital Menu Boards
+                        (ODMBs).</p>
+
+                    <p>Indoor Digital Menu Boards are set up as an array of five 47-inch or 49-inch displays set either
+                        vertically or horizontally with a media player for each display. Each media player has both
+                        primary content for it's main display and backup content for its neighbor to the right.</p>
+
+                    <p>Outdoor Digital Menu Boards are two vertical displays in an external enclosure and up to two
+                        pre-sell boards in single display enclosures. Each display has its own media player.</p>
+
+                    <p>ODMBs also use an Integrated Customer Order Display (ICOD). This replaced the legacy COD formerly
+                        housed in the drive thru lane's canopy. It shows on the left panel of the ODMB while placing the
+                        order, and the entire order is displayed on the left panel when the order is stored, allowing
+                        for better order confirmation by the customer. Please note if the left panel is displaying
+                        backup content, the ICOD <strong>will not</strong> display.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer" id="contact">
+            <p>For questions or to report an issue, contact our OTP via <a class="contact"
+                    href="mailto:mcd.zach.balch@gmail.com">email</a> or <a class="contact"
+                    href="tel:256-690-2564">phone.</a></p>
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>

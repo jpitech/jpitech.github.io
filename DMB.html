@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DMB Troubleshooting</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.6.4.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+</head>
+
+<body>
+
+    <div data-role="page" id="card1">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>DMB Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Are you having issues with your indoor or outdoor Digital Menu Board?</h3>
+
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card4">Indoor</a></li>
+                <li><a href="#card12">Outdoor</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card2">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>DMB Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Great! You're good to go!</h3>
+
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card1">Restart troubleshooting.</a></li>
+                <li><a href="jpitech.github.io/home.html">Return to home page.</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card3">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>DMB Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Contact your OTP for further troubleshooting.</h3>
+
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card1">Restart troubleshooting.</a></li>
+                <li><a href="tel:2566902564">Call your OTP.</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card4">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>DMB Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>What symptoms are you experiencing?</h3>
+
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card5">DMB is completely blank.</a></li>
+                <li><a href="#card8">DMB is showing "No Signal."</a></li>
+                <li><a href="#card11">DMB is only showing partial content.</a></li>
+                <li><a href="#card3">DMB is showing incorrect content.</a></li>
+                <li><a href="#card3">Menu item or promotion needs to be removed.</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card5">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>DMB Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Check to make sure the DMB has power.</h3>
+
+            <p>Press the power button (first button on the left on the back of the display).If the display does not come
+                on, pull the power cable, let the display sit for a few minutes, and plug the cable back in.</p>
+
+            <p><strong>Did this solve the issue?</strong></p>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card2">Yes</a></li>
+                <li><a href="#card6">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card6">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>DMB Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Verify the media player has power and all cables are connected properly.</h3>
+
+            <p>If needed, pull each cable and reseat individually. If your media player uses a DisplayPort cable, the
+                connector locks into place. Press the lock release to remove the cable. DO NOT rip the cable out of the
+                socket or you WILL damage the connector.</p>
+
+            <p><strong>Did this solve the issue?</strong></p>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card2">Yes</a></li>
+                <li><a href="#card7">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card7">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>DMB Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Reboot the media player.</h3>
+
+            <p>Press and hold the power button until the network port lights have turned off. If you are able to see the
+                lights on the front of the media player, the S-200 status light will turn off. NG2 media players will
+                have a red power button. Press the power button again to boot the player.</p>
+
+            <p><strong>Did this solve the issue?</strong></p>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card2">Yes</a></li>
+                <li><a href="#card3">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card8">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>DMB Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Reboot the media player.</h3>
+
+            <p>Press and hold the power button until the network port lights have turned off. If you are able to see the
+                lights on the front of the media player, the S-200 status light will turn off. NG2 media players will
+                have a red power button. Press the power button again to boot the player.</p>
+
+            <p><strong>Did this solve the issue?</strong></p>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card2">Yes</a></li>
+                <li><a href="#card9">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card9">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>DMB Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Verify the display is on the correct input.</h3>
+
+            <p>Press the input selection button (far right on the back of the display) to bring up the input selection
+                menu. This button may be hard to press depending on the type of mounting system you have. Cycle through
+                the DisplayPort, HDMI, and DVI inputs to see if content is displaying on each input.</p>
+
+            <p><strong>Did this solve the issue?</strong></p>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card2">Yes</a></li>
+                <li><a href="#card10">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card10">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>DMB Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Power cycle both the media player and the display.</h3>
+
+            <p>Turn off the media player via the method described in the reboot instructions, but do not turn the player
+                back on. Pull the network cable from the media player. Disconnect the power cable from the display. Let
+                the devices sit for approximately five minutes before reconnecting. This allows the devices to
+                completely discharge any stored electricity. After five minutes, reconnect all disconnected cables and
+                turn on the media player.</p>
+
+            <p><strong>Did this solve the issue?</strong></p>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card2">Yes</a></li>
+                <li><a href="#card3">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card11">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>DMB Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Reboot the media player.</h3>
+
+            <p>Press and hold the power button until the network port lights have turned off. If you are able to see the
+                lights on the front of the media player, the S-200 status light will turn off. NG2 media players will
+                have a red power button. Press the power button again to boot the player.</p>
+
+            <p><strong>Did this solve the issue?</strong></p>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card2">Yes</a></li>
+                <li><a href="#card3">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card12">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>DMB Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Do you have a key to open the ODMB enclosure?</h3>
+
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card13">Yes</a></li>
+                <li><a href="#card3">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card13">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>DMB Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>What symptoms are you experiencing?</h3>
+
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card14">One ODMB is blank.</a></li>
+                <li><a href="#card18">All ODMBs are blank.</a></li>
+                <li><a href="#card20">One ODMB is brighter than the other.</a></li>
+                <li><a href="#card3">ODMB is showing incorrect content.</a></li>
+                <li><a href="#card3">Menu item or promotion needs to be removed.</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card14">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>DMB Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Reboot the media player.</h3>
+
+            <p>Each enclosure has two media players. The bottom media player should drive the left panel, and the top
+                media player should drive the right panel. Press and hold the power button until the light turns red. If
+                you cannot reach the power button easily, use a small object such as a ballpoint pen to press the power
+                button. Once the light turns red, press the power button again to boot the media player.</p>
+
+            <p><strong>Did this solve the issue?</strong></p>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card2">Yes</a></li>
+                <li><a href="#card15">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card15">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>DMB Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Verify the display is on the correct input.</h3>
+
+            <p>The store should have a Samsung remote in the office for the ODMBs. If you do not have a remote, STOP
+                HERE and contact your OTP.</p>
+
+            <p>Cycle the inputs between HDMI 1 and HDMI 2. The display should be on HDMI 1 to display primary content.</p>
+
+            <p><strong>Did this solve the issue?</strong></p>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card2">Yes</a></li>
+                <li><a href="#card16">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card16">
+
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>DMB Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Verify the display has power</h3>
+
+            <p>Use the remote to power cycle the display.</p>
+
+            <p><strong>Did this solve the issue?</strong></p>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card2">Yes</a></li>
+                <li><a href="#card17">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card17">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>DMB Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Put the display on backup content.</h3>
+
+            <p>Pull the HDMI 1 cable from the affected media player to induce failover mode and display backup content.
+                This is only a temporary workaround, and you should contact your OTP immediately if this is the
+                resolution. There may be other issues in the background preventing primary content from displaying.
+                NOTE: If the left panel of the ODMB is displaying backup content, the integrated COD will NOT display
+                customer orders.</p>
+
+            <p><strong>Did this solve the issue?</strong></p>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card3">Yes</a></li>
+                <li><a href="#card3">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card18">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>DMB Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Check for any tripped circuit breakers.</h3>
+
+            <p>The ODMBs are on their own circuit breaker, and it may be labeled as such. Find the breaker, and verify
+                it has not tripped. If there is no label for the breaker, check all of the breaker panels for any
+                tripped breakers.</p>
+
+            <p><strong>Did this solve the issue?</strong></p>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card2">Yes</a></li>
+                <li><a href="#card19">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card19">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>DMB Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Pull power and network cables from all media players.</h3>
+
+            <p>Disconnect power and network cables from all media players, including the pre-sell boards, and let the
+                devices sit for about five minutes. After five minutes, reconnect the network and power cables and boot
+                each media player.</p>
+
+            <p><strong>Did this solve the issue?</strong></p>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card2">Yes</a></li>
+                <li><a href="#card3">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card20">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>DMB Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Power cycle the display.</h3>
+
+            <p>The store should have a Samsung remote in the office for the ODMBs. If you do not have a remote, STOP
+                HERE and contact your OTP.</p>
+
+            <p>Use the remote to power cycle the display. The backlight should reset itself and should match the other
+                displays.</p>
+
+            <p><strong>Did this solve the issue?</strong></p>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card2">Yes</a></li>
+                <li><a href="#card3">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+</body>
+
+</html>

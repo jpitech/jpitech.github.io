@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Kiosk Troubleshooting</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.6.4.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+</head>
+
+<body>
+
+    <div data-role="page" id="card1">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>Kiosk Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>What symptoms are you experiencing?</h3>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card11">Kiosk shows it is closed.</a></li>
+                <li><a href="#card6">Kiosk is offline.</a></li>
+                <li><a href="#card6">Orders are not being sent from the kiosks.</a></li>
+                <li><a href="#card9">Kiosk receipts are not feeding.</a></li>
+                <li><a href="#card3">None of the above.</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card2">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>Kiosk Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Great! You're good to go!</h3>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card1">Restart troubleshooting</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card3">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>Kiosk Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Contact your OTP for further troubleshooting.</h3>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card1">Restart troubleshooting</a></li>
+                <li><a href="tel:2566902564">Call your OTP.</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card4">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>Kiosk Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Check the printer for paper.</h3>
+
+            <p>The kiosk is designed to show it's closed if the printer malfunctions. Verify the printer has paper and refill if necessary.</p>
+
+            <p><strong>Did this solve your issue?</strong></p>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card2">Yes</a></li>
+                <li><a href="#card5">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card5">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>Kiosk Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Power cycle the printer.</h3>
+
+            <p>Open the kiosk door. There should be at least one key available in the office. Flip the power switch to
+                the printer off and then on again.</p>
+
+            <p><strong>Did this solve your issue?</strong></p>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card2">Yes</a></li>
+                <li><a href="#card3">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card6">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>Kiosk Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>How do you access the printer?</h3>
+
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card7">Push button and latch</a></li>
+                <li><a href="#card8">Magnet</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card7">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>Kiosk Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Reboot the kiosk controller.</h3>
+
+            <p>Open the kiosk. The controller is enclosed in a yellow metal casing. Press the power button to shut down
+                the kiosk. <strong>DO NOT</strong> hold the power button down! Press the power button again to boot
+                the kiosk.</p>
+
+            <p><strong>Did this solve your issue?</strong></p>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card2">Yes</a></li>
+                <li><a href="#card3">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card8">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>Kiosk Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Reboot the kiosk controller.</h3>
+
+            <p>Open the kiosk. The controller is a silver box at the top of the door. The power switch should be on the
+                bottom left of the controller. Flip the power switch to shut down the kiosk. Flip the power switch back
+                to boot the kiosk.</p>
+
+            <p><strong>Did this solve your issue?</strong></p>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card2">Yes</a></li>
+                <li><a href="#card3">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card9">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>Kiosk Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Check the printer for jams.</h3>
+
+            <p>Open the printer, and see if there is paper wrapped around the roller. If there is, remove the jam.</p>
+
+            <p><strong>Did this solve your issue?</strong></p>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card2">Yes</a></li>
+                <li><a href="#card10">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card10">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>Kiosk Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Check the paper path for obstructions.</h3>
+
+            <p>Look through the thin opening for the paper. Remove any physical obstructions.</p>
+
+            <p><strong>Did this solve your issue?</strong></p>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card2">Yes</a></li>
+                <li><a href="#card3">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card11">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>Kiosk Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Verify a user is logged into the kiosk.</h3>
+
+            <p>Kiosks are just like registers and require a user to be logged in to be used. If there is no user logged in, log into the kiosk.</p>
+
+            <p><strong>Did this solve your issue?</strong></p>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card2">Yes</a></li>
+                <li><a href="#card4">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+</body>
+
+</html>
