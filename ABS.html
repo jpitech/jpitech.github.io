@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Legacy ABS Troubleshooting</title>
+    <title>ABS Troubleshooting</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.6.4.min.js"></script>
@@ -19,11 +19,12 @@
         <div data-role="content">
             <h3>What symptoms are you experiencing?</h3>
             <ul data-role="listview" data-inset="true">
-                <li><a href="#card5">ABS does not make drinks automatically.</a></li>
-                <li><a href="#card8">ABS is showing POS cable error.</a></li>
-                <li><a href="#card10">ABS is stuck on <em>Initializing</em>.</a></li>
-                <li><a href="#card13">ABS is making drinks no longer needed.</a></li>
-                <li><a href="#card10">ABS is showing errors other than the POS cable.</a></li>
+                <li><a href="#card5">ABS 1.0 does not make drinks automatically.</a></li>
+                <li><a href="#card8">ABS 1.0 is showing POS cable error.</a></li>
+                <li><a href="#card10">ABS 1.0 is stuck on <em>Initializing</em>.</a></li>
+                <li><a href="#card13">ABS 1.0 is making drinks no longer needed.</a></li>
+                <li><a href="#card10">ABS 1.0 is showing errors other than the POS cable.</a></li>
+                <li><a href="#card16">ABS 2.0 does not make drinks automatically.</a></li>
             </ul>
         </div><!-- /content -->
     </div><!-- /page -->
@@ -109,6 +110,15 @@
             <p><strong>NOTE:</strong> If the ABS starts making drinks no longer needed, do the following to clear drink
                 orders:</p>
 
+            <ol>
+                <li>Put the machine in manual mode.</li>
+                <li>Press the &darr; button.</li>
+                <li>The password is the first four flavors on the top row.</li>
+                <li>Press <em>Enter</em>.</li>
+                <li>Press the <em>Back/Clear</em> button until you return to manual mode.</li>
+                <li>Put the machine back in auto.</li>
+            </ol>
+
             <p><strong>Did this solve your issue?</strong></p>
             <ul data-role="listview" data-inset="true">
                 <li><a href="#card2">Yes</a></li>
@@ -142,7 +152,8 @@
 
             <ol>
                 <li>Locate the serial hub. It is a grey box with a green, circular section with
-                    <em><strong>N-Port</strong></em> in the middle of it.</li>
+                    <em><strong>N-Port</strong></em> in the middle of it.
+                </li>
                 <li>Unplug the power and network cables.</li>
                 <li>Wait 10 seconds.</li>
                 <li>Plug the power and network cables back in.</li>
@@ -166,12 +177,13 @@
 
             <ol>
                 <li>Locate the serial hub. It is a grey box with a green, circular section with
-                    <em><strong>N-Port</strong></em> in the middle of it.</li>
+                    <em><strong>N-Port</strong></em> in the middle of it.
+                </li>
                 <li>Unplug the ABS serial cable in port 4.</li>
                 <li>Wait 10 seconds.</li>
                 <li>Plug the serial cable back into port 4.</li>
             </ol>
-            
+
             <p><strong>Did this solve your issue?</strong></p>
             <ul data-role="listview" data-inset="true">
                 <li><a href="#card2">Yes</a></li>
@@ -234,6 +246,9 @@
         <div data-role="content">
             <h3>Reboot the POS server VM.</h3>
 
+            <p><strong>NOTE: </strong>If your server has been upgraded or replaced recently, contact your OTP before
+                rebooting the POS server.</p>
+
             <p>In the back office, change the KVM input to PC2 with one of the following methods:</p>
 
             <ul>
@@ -250,14 +265,16 @@
                 on front counter and totaling out the order. A box asking to try again will pop up. Press "No." A second
                 box will pop up. Press "Yes." Watch the word "Standard" on a KVS screen. Once it switches from white to
                 red, you will be in backup. Go back to the office and click <em>Start
-                    VM</em>.</p>
+                    VM</em>.
+            </p>
 
-            <p>Once the POS server finishes loading all software, check the icons on the taskbar. There should be a Java
-                icon (looks like a coffee cup), and one that says <em>NP</em>. Click the Java icon and verify it says
-                <em>Working as Primary</em>, then hover your mouse over the NP icon and verify there are five boxes
+            <p>Once the POS server finishes loading all software, check the icons on the taskbar. There should be an
+                icon that looks like the pound sign (#). Hover your mouse over the icon and verify there are five boxes
                 showing
-                <strong style="color:red;">If there are less than five boxes or if the Java icon is not present, call
-                    your OTP!</strong></p>
+                <strong style="color:red;">If there are less than five boxes or if Waystation Status Hub says anything
+                    other than Open and Primary, call
+                    your OTP!</strong>
+            </p>
 
             <p>Promote the store to primary production by going to Manager &rarr; Support &rarr; Promote to Primary
                 Production. Either wait for the register to say "Production has been switched," or for "Standard" on a
@@ -328,6 +345,38 @@
             <ul data-role="listview" data-inset="true">
                 <li><a href="#card2">Yes</a></li>
                 <li><a href="#card3">No</a></li>
+            </ul>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="card16">
+        <div data-role="header">
+            <a href="#card1" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>ABS Troubleshooting</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <h3>Power cycle the ABS.</h3>
+
+            <ol>
+                <li>The switch is on the left hand side behind the drink table.</li>
+                <li>Flip the switch to power it off.</li>
+                <li>Wait 10 seconds.</li>
+                <li>Flip the switch to power it back on.</li>
+            </ol>
+
+            <p><strong>NOTE:</strong> If the ABS starts making drinks no longer needed, do the following to clear drink
+                orders:</p>
+
+            <ol>
+                <li>Tap on <em>Order Queue</em> on the left touch screen.</li>
+                <li>Clear the unneccessary drinks from the queue.</li>
+            </ol>
+
+
+            <p><strong>Did this solve your issue?</strong></p>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#card2">Yes</a></li>
+                <li><a href="#card11">No</a></li>
             </ul>
         </div><!-- /content -->
     </div><!-- /page -->
